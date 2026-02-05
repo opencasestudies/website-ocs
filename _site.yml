@@ -3,9 +3,6 @@ output_dir: 'docs'
 navbar:
   title: Open Case Studies
   left:
-  - text: ""
-    href: index.html
-    icon: fa-home
   - text: About
     href: setup.html
   - text: Survey

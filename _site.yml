@@ -6,7 +6,7 @@ navbar:
   - text: About
     href: setup.html
   - text: Survey
-    href: hosting.html
+    href: survey.html
   - text: Blog
     href: editing.html
   - text: Team

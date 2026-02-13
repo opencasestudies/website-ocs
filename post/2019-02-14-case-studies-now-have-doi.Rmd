@@ -69,7 +69,7 @@ if (length(other_posts) > 0) {
       html_file <- gsub("\\.Rmd$", ".html", post_file)
       
       cat(sprintf('<div class="related-post-card">
-<h2><a href="%s">%s</a></h2>
+<h3><a href="%s">%s</a></h3>
 <div class="post-date">%s</div>
 </div>\n', html_file, title, date))
     }

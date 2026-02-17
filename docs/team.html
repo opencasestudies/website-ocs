@@ -11,9 +11,9 @@
 
 
 
-<title>Style</title>
+<title>team.knit</title>
 
-<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -34,6 +34,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link rel="shortcut icon" href="resources/images/favicon.ico" />
  <!--- go to https://favicon.io/favicon-converter/ to upload an image to make a new favicon.io. You will need to replace the current favicon.io image with the one in the downloaded directory from the website. The current image is in the resources/images/ directory --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -255,7 +257,7 @@ $(document).ready(function () {
   <a href="blog.html">Blog</a>
 </li>
 <li>
-  <a href="style.html">Team</a>
+  <a href="team.html">Team</a>
 </li>
 <li>
   <a href="git_actions.html">Talks</a>
@@ -278,60 +280,277 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Style</h1>
 
 </div>
 
 
-<div id="navigation-bar" class="section level2">
-<h2>Navigation bar</h2>
-<p>To change the part of the navigation bar that says “OTTR Web”, modify
-the title within the <code>_site.yml</code> file.</p>
-<p><img src="resources/images/navbar.png" alt="Change nav bar" width="40%" style="display: block; margin: auto;" /></p>
+<style>
+body {
+  background: #f5f5f5;
+  max-width: 100% !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+/* Override rmarkdown's default content width */
+.main-container {
+  max-width: 1600px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
+  text-align: center !important;
+}
+/* rmarkdown injects this row div which breaks centering */
+.row {
+  margin: 0 !important;
+  text-align: center !important;
+}
+p, h1, h2, h3, h4 {
+  text-align: center !important;
+}
+.page-header {
+  text-align: center !important;
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: #333;
+  margin: 60px 0 20px 0;
+  width: 100%;
+  display: block;
+}
+.group-header {
+  text-align: center !important;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #333;
+  margin: 60px 0 40px 0;
+  width: 100%;
+  display: block;
+}
+.team-grid {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin: 40px auto !important;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.team-card-link {
+  text-decoration: none;
+  display: block;
+}
+.team-card {
+  text-align: center !important;
+  width: 220px;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-card:hover {
+  transform: translateY(-5px);
+}
+.team-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px auto !important;
+  display: block !important;
+}
+.team-name {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #1e90ff;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+  text-align: center;
+}
+.team-role {
+  color: #666;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.4;
+  text-align: center;
+}
+</style>
+<h1 class="page-header">
+Team
+</h1>
+<h2 class="group-header">
+Faculty
+</h2>
+<div class="team-grid">
+<a href="team/cwright/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/cwright/avatar.jpg" alt="Carrie Wright, PhD " class="team-avatar">
+<h3 class="team-name">
+Carrie Wright, PhD
+</h3>
+<div class="team-role">
+Senior Staff Scientist
 </div>
-<div id="overall-theme" class="section level2">
-<h2>Overall theme</h2>
-<p>To change the color scheme/fonts of the website modify the
-<code>theme</code> in the <code>_site.yml</code> file (see <a
-href="https://bookdown.org/yihui/blogdown/themes.html">here</a> for
-options):</p>
-<p><img src="resources/images/theme.png" alt="Change theme" width="40%" style="display: block; margin: auto;" /></p>
 </div>
-<div id="change-the-favicon" class="section level2">
-<h2>Change the favicon</h2>
-<p>The small image that shows up on the browser can also be changed.</p>
-<p>You can make a small image to replace the existing one by going to <a
-href="https://favicon.io/favicon-converter/"
-class="uri">https://favicon.io/favicon-converter/</a> and uploading an
-image that you would like.</p>
-<p>Next, simply replace the image called <code>favicon.ico</code> in the
-<code>images</code> directory within the <code>resources</code>
-directory with the image you just created and downloaded from the
-favicon converter website.</p>
+<p></a></p>
+<a href="team/jmuschelli/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/jmuschelli/avatar.png" alt="John Muschelli, PhD" class="team-avatar">
+<h3 class="team-name">
+John Muschelli, PhD
+</h3>
+<div class="team-role">
+Associate Scientist
 </div>
-<div id="additional-changes" class="section level2">
-<h2>Additional changes</h2>
-<p>To make additional changes to the style, you can modify the
-<code>styles.css</code> file with css code. This <a
-href="https://www.w3schools.com/css/">website</a> has great information
-about css code.</p>
-<p>As an example if you wanted to change the color of the blue line to
-green you could change where it says <code>lightblue</code> to
-<code>lightgreen</code> in the <code>styles.css</code> file. You can
-also use a hex color code like those that can be found at this <a
-href="https://htmlcolorcodes.com/">website</a>, such as
-<code>#00FF9E</code> to get a specific shade.</p>
-<p><img src="resources/images/blue.png" alt="Change color of line" width="80%" style="display: block; margin: auto;" /></p>
-<p>Note that if you change the css file with a new element that is not
-already defined like <code>body</code> then you would need to do it as
-done with the <code>banner</code> element. This was then added to the
-index.Rmd file by using:</p>
-<pre><code>&lt;div class = &quot;banner&quot;&gt;
-Banner text!  
-&lt;/div&gt;</code></pre>
-<p>Also checkout the <a
-href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">R
-Markdown cheatsheet</a> for more customization of the pages.</p>
+</div>
+<p></a></p>
+<a href="team/ljager/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/ljager/avatar.png" alt="Leah Jager, PhD" class="team-avatar">
+<h3 class="team-name">
+Leah Jager, PhD
+</h3>
+<div class="team-role">
+Assistant Scientist
+</div>
+</div>
+<p></a></p>
+<a href="team/mtaub/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/mtaub/avatar.png" alt="Margaret Taub, PhD" class="team-avatar">
+<h3 class="team-name">
+Margaret Taub, PhD
+</h3>
+<div class="team-role">
+Associate Scientist
+</div>
+</div>
+<p></a></p>
+</div>
+<h2 class="group-header">
+Research Assistants
+</h2>
+<div class="team-grid">
+<a href="team/kisaac/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/kisaac/avatar.jpg" alt="Kate Isaac, PhD " class="team-avatar">
+<h3 class="team-name">
+Kate Isaac, PhD
+</h3>
+<div class="team-role">
+Postdoctoral Fellow
+</div>
+</div>
+<p></a></p>
+</div>
+<h2 class="group-header">
+OCS Alumni
+</h2>
+<div class="team-grid">
+<a href="team/astephens/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/astephens/avatar.jpeg" alt="Alexandra Stephens, MSE" class="team-avatar">
+<h3 class="team-name">
+Alexandra Stephens, MSE
+</h3>
+<div class="team-role">
+
+</div>
+</div>
+<p></a></p>
+<a href="team/hzhang/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/hzhang/avatar.jpeg" alt="Hanchao (Ted) Zhang, MS" class="team-avatar">
+<h3 class="team-name">
+Hanchao (Ted) Zhang, MS
+</h3>
+<div class="team-role">
+
+</div>
+</div>
+<p></a></p>
+<a href="team/kwang/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/kwang/avatar.jpeg" alt="Kexin (Sheena) Wang, MSE" class="team-avatar">
+<h3 class="team-name">
+Kexin (Sheena) Wang, MSE
+</h3>
+<div class="team-role">
+
+</div>
+</div>
+<p></a></p>
+<a href="team/latta/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/latta/avatar.jpg" alt="Lyla Atta, BS " class="team-avatar">
+<h3 class="team-name">
+Lyla Atta, BS
+</h3>
+<div class="team-role">
+
+</div>
+</div>
+<p></a></p>
+<a href="team/mbreshock/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/mbreshock/avatar.jpg" alt="Michael Breshock, MSE" class="team-avatar">
+<h3 class="team-name">
+Michael Breshock, MSE
+</h3>
+<div class="team-role">
+
+</div>
+</div>
+<p></a></p>
+<a href="team/montiveros/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/montiveros/avatar.png" alt="Michael Ontiveros, MHS" class="team-avatar">
+<h3 class="team-name">
+Michael Ontiveros, MHS
+</h3>
+<div class="team-role">
+
+</div>
+</div>
+<p></a></p>
+<a href="team/pkuo/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/pkuo/avatar.jpeg" alt="Pei-Lun (Perry) Kuo, MD, MPH" class="team-avatar">
+<h3 class="team-name">
+Pei-Lun (Perry) Kuo, MD, MPH
+</h3>
+<div class="team-role">
+
+</div>
+</div>
+<p></a></p>
+<a href="team/qmeng/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/qmeng/avatar.jpg" alt="Qier Meng, ScM" class="team-avatar">
+<h3 class="team-name">
+Qier Meng, ScM
+</h3>
+<div class="team-role">
+
+</div>
+</div>
+<p></a></p>
+</div>
+<h2 class="group-header">
+Principal Investigator
+</h2>
+<div class="team-grid">
+<a href="team/shicks/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="team/shicks/avatar.jpg" alt="Stephanie Hicks, PhD" class="team-avatar">
+<h3 class="team-name">
+Stephanie Hicks, PhD
+</h3>
+<div class="team-role">
+Assistant Professor (Principal Investigator)
+</div>
+</div>
+<p></a></p>
 </div>
 
 

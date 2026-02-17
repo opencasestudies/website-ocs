@@ -1,0 +1,176 @@
+---
+# title: "Team"
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(yaml)
+```
+<style>
+body {
+  background: #f5f5f5;
+  max-width: 100% !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+/* Override rmarkdown's default content width */
+.main-container {
+  max-width: 1600px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
+  text-align: center !important;
+}
+/* rmarkdown injects this row div which breaks centering */
+.row {
+  margin: 0 !important;
+  text-align: center !important;
+}
+p, h1, h2, h3, h4 {
+  text-align: center !important;
+}
+.page-header {
+  text-align: center !important;
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: #333;
+  margin: 60px 0 20px 0;
+  width: 100%;
+  display: block;
+}
+.group-header {
+  text-align: center !important;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #333;
+  margin: 60px 0 40px 0;
+  width: 100%;
+  display: block;
+}
+.team-grid {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin: 40px auto !important;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.team-card-link {
+  text-decoration: none;
+  display: block;
+}
+.team-card {
+  text-align: center !important;
+  width: 220px;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-card:hover {
+  transform: translateY(-5px);
+}
+.team-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px auto !important;
+  display: block !important;
+}
+.team-name {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #1e90ff;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+  text-align: center;
+}
+.team-role {
+  color: #666;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.4;
+  text-align: center;
+}
+</style>
+```{r generate-team, results='asis'}
+# Function to extract YAML from an Rmd file
+extract_yaml_from_rmd <- function(file) {
+  lines <- readLines(file, warn = FALSE)
+  
+  yaml_start <- which(lines == "---")[1]
+  yaml_end   <- which(lines == "---")[2]
+  
+  if (is.na(yaml_start) || is.na(yaml_end)) return(NULL)
+  
+  yaml_text <- paste(lines[(yaml_start + 1):(yaml_end - 1)], collapse = "\n")
+  tryCatch(yaml::yaml.load(yaml_text), error = function(e) NULL)
+}
+
+`%||%` <- function(a, b) if (!is.null(a)) a else b
+
+# Find all team member directories
+team_dirs <- list.dirs("team", recursive = FALSE, full.names = FALSE)
+
+# Extract metadata from each team member
+team_members <- list()
+for (username in team_dirs) {
+  index_file <- file.path("team", username, "_index.Rmd")
+  
+  if (file.exists(index_file)) {
+    metadata <- extract_yaml_from_rmd(index_file)
+    
+    if (!is.null(metadata)) {
+      team_members[[username]] <- list(
+        username   = username,
+        name       = metadata$name,
+        role       = metadata$role,
+        user_group = metadata$user_group %||% "Team Members",
+        avatar     = file.path("team", username, metadata$avatar)
+      )
+    }
+  }
+}
+
+# Group team members by user_group
+groups <- list()
+for (username in names(team_members)) {
+  member <- team_members[[username]]
+  group  <- member$user_group
+  if (is.null(groups[[group]])) groups[[group]] <- list()
+  groups[[group]][[username]] <- member
+}
+
+group_order <- c("Faculty", "Research Assistants", "OCS Alumni")
+ordered_names <- c(
+  intersect(group_order, names(groups)),
+  setdiff(names(groups), group_order)
+)
+groups <- groups[ordered_names]
+
+cat('\n<h1 class="page-header">Team</h1>\n')
+
+# Display each group
+for (group_name in names(groups)) {
+  cat(sprintf('\n<h2 class="group-header">%s</h2>\n', group_name))
+  cat('<div class="team-grid">\n')
+  
+  for (username in names(groups[[group_name]])) {
+    member <- groups[[group_name]][[username]]
+    cat(sprintf('
+<a href="team/%s/_index.html" class="team-card-link">
+<div class="team-card">
+<img src="%s" alt="%s" class="team-avatar">
+<h3 class="team-name">%s</h3>
+<div class="team-role">%s</div>
+</div>
+</a>
+', username, member$avatar, member$name, member$name, member$role %||% ""))
+  }
+  
+  cat('</div>\n')
+}
+```

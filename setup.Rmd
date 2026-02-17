@@ -1,5 +1,5 @@
 ---
-title: "Open Case Studies"
+#title: "Open Case Studies"
 output:
   html_document
 ---

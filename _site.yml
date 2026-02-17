@@ -10,7 +10,7 @@ navbar:
   - text: Blog
     href: blog.html
   - text: Team
-    href: style.html
+    href: team.html
   - text: Talks
     href: git_actions.html
   - text: Contact

@@ -11,9 +11,6 @@ header:
   caption: ''
   image: ''
   preview: yes
-output:
-  html_document:
-    css: ../styles.css
 ---
  
 We are happy to announce that on July 15th, 2020, our team was awarded a [Digital Education Learning Technology Acceleration (DELTA) grant](https://provost.jhu.edu/about/digital-initiatives/delta/) form the Johns Hopkins University Office of the Provost for our proposal entitled ["Accessible experiential lesson guide delivery platform"] (https://provost.jhu.edu/about/digital-initiatives/delta/2020-delta-awards/). 

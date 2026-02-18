@@ -11,9 +11,6 @@ header:
   caption: ''
   image: ''
   preview: yes
-output:
-  html_document:
-    css: ../styles.css
 ---
  
 Our team recently published an [article](https://www.tandfonline.com/doi/full/10.1080/26939169.2024.2394541) about OCS in the [Journal of Statistics and Data Science Education](https://doi.org/10.1080/26939169.2024.2394541).

@@ -11,9 +11,6 @@ header:
   caption: ''
   image: ''
   preview: yes
-output:
-  html_document:
-    css: ../styles.css
 ---
 
 The Open Case Studies team is excited to announce 

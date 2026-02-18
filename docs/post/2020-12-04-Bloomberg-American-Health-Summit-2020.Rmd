@@ -11,9 +11,6 @@ header:
   caption: ''
   image: ''
   preview: yes
-output:
-  html_document:
-    css: ../styles.css
 ---
  
 

@@ -13,9 +13,6 @@ header:
   preview: yes
 content:
   page_type: "post"
-output:
-  html_document:
-    css: ../styles.css
 ---
  
 Welcome [Kate Issac](https://opencasestudies.github.io/authors/kisaac/) to the OCS Team!

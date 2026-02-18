@@ -11,9 +11,6 @@ header:
   caption: ''
   image: ''
   preview: yes
-output:
-  html_document:
-    css: ../styles.css
 ---
  
 In September 2019, we welcomed [Carrie Wright](https://opencasestudies.github.io/authors/cwright/) to the OCS Team as a Research Associate faculty in the [Johns Hopkins Data Science Lab](https://jhudatascience.org) working on building Open Case Studies. 

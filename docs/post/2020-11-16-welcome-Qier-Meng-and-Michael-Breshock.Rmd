@@ -11,9 +11,6 @@ header:
   caption: ''
   image: ''
   preview: yes
-output:
-  html_document:
-    css: ../styles.css
 ---
  
 Welcome [Qier Meng](https://opencasestudies.github.io/authors/qmeng/) and [Michael Breshock](https://opencasestudies.github.io/authors/mbreshock/) to the OCS Team!

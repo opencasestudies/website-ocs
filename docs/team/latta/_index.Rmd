@@ -8,7 +8,13 @@ email: lylaatta@jhmi.edu
 bio: ' '
 user_group: OCS Alumni
 avatar: avatar.jpg
-site: ../../_site.yml
+output:
+  html_document:
+    theme: cosmo
+    lib_dir: site_libs
+    self_contained: no
+    highlight: textmate
+    css: ../../styles.css
 education:
 - degree: BS in Biological Engineering
   institution: Massachusetts Institute of Technology

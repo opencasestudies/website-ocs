@@ -8,7 +8,13 @@ email: .na.character
 bio: Postdoctoral Fellow at the Fred Hutchinson Cancer Center.
 user_group: Research Assistants
 avatar: avatar.jpg
-site: ../../_site.yml
+output:
+  html_document:
+    theme: cosmo
+    lib_dir: site_libs
+    self_contained: no
+    highlight: textmate
+    css: ../../styles.css
 education: []
 social:
   website: https://kweav.github.io/

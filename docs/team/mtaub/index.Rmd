@@ -8,7 +8,13 @@ email: mtaub2@jhu.edu
 bio: Associate Scientist at the Johns Hopkins Bloomberg School of Public Health
 user_group: Faculty
 avatar: avatar.png
-site: ../../_site.yml
+output:
+  html_document:
+    theme: cosmo
+    lib_dir: site_libs
+    self_contained: no
+    highlight: textmate
+    css: ../../styles.css
 education:
 - degree: Postdoctoral Fellow
   institution: Johns Hopkins Bloomberg School of Public Health

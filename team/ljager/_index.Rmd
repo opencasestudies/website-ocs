@@ -8,13 +8,6 @@ email: ljager@jhu.edu"#interests = [""]
 bio: Assistant Scientist at the Hopkins Bloomberg School of Public Health
 user_group: Faculty
 avatar: avatar.png
-output:
-  html_document:
-    theme: cosmo
-    lib_dir: site_libs
-    self_contained: no
-    highlight: textmate
-    css: ../../styles.css
 education:
 - degree: Phd in Statistics
   institution: University of Washington

@@ -8,13 +8,6 @@ email: ''
 bio: ' '
 user_group: OCS Alumni
 avatar: avatar.jpg
-output:
-  html_document:
-    theme: cosmo
-    lib_dir: site_libs
-    self_contained: no
-    highlight: textmate
-    css: ../../styles.css
 education:
 - degree: Master of Science in Biostastistics
   institution: Johns Hopkins Bloomberg School of Public Health

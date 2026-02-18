@@ -9,13 +9,6 @@ bio: MHS in Epidemiology graduate student at Johns Hopkins Bloomberg School of P
   Health
 user_group: OCS Alumni
 avatar: avatar.png
-output:
-  html_document:
-    theme: cosmo
-    lib_dir: site_libs
-    self_contained: no
-    highlight: textmate
-    css: ../../styles.css
 education:
 - degree: BA in Public Health Studies
   institution: Johns Hopkins University

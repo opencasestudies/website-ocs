@@ -8,13 +8,6 @@ email: .na.character
 bio: Mathematician/Programmer at The Johns Hopkins University Applied Physics Laboratory
 user_group: OCS Alumni
 avatar: avatar.jpeg
-output:
-  html_document:
-    theme: cosmo
-    lib_dir: site_libs
-    self_contained: no
-    highlight: textmate
-    css: ../../styles.css
 education:
 - degree: Master's of Science and Engineering - MSE, Applied Mathematics and Statistics
   institution: The Johns Hopkins University

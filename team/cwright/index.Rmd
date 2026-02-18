@@ -9,7 +9,13 @@ bio: Senior Staff Scientist at the Fred Hutchinson Cancer Center and affiliated 
   member at the Johns Hopkins Bloomberg School of Public Health.
 user_group: Faculty
 avatar: avatar.jpg
-site: ../../_site.yml
+output:
+  html_document:
+    theme: cosmo
+    lib_dir: site_libs
+    self_contained: no
+    highlight: textmate
+    css: ../../styles.css
 education:
 - degree: Postdoctoral Fellow
   institution: Lieber Institute for Brain Development

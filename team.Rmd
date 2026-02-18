@@ -89,7 +89,7 @@ p, h1, h2, h3, h4 {
 }
 .team-role {
   color: #666;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
   margin: 0;
   line-height: 1.4;
@@ -118,7 +118,7 @@ team_dirs <- list.dirs("team", recursive = FALSE, full.names = FALSE)
 # Extract metadata from each team member
 team_members <- list()
 for (username in team_dirs) {
-  index_file <- file.path("team", username, "_index.Rmd")
+  index_file <- file.path("team", username, "index.Rmd")
   
   if (file.exists(index_file)) {
     metadata <- extract_yaml_from_rmd(index_file)
@@ -161,7 +161,7 @@ for (group_name in names(groups)) {
   for (username in names(groups[[group_name]])) {
     member <- groups[[group_name]][[username]]
     cat(sprintf('
-<a href="team/%s/_index.html" class="team-card-link">
+<a href="team/%s/index.html" class="team-card-link">
 <div class="team-card">
 <img src="%s" alt="%s" class="team-avatar">
 <h3 class="team-name">%s</h3>

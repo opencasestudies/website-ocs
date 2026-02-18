@@ -8,7 +8,13 @@ email: .na.character
 bio: Graduate Student at NYU Grossman School of Medicine
 user_group: OCS Alumni
 avatar: avatar.jpeg
-site: ../../_site.yml
+output:
+  html_document:
+    theme: cosmo
+    lib_dir: site_libs
+    self_contained: no
+    highlight: textmate
+    css: ../../styles.css
 education:
 - degree: Master of Science, Biostatistics and Data Science
   institution: Cornell University

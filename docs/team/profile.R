@@ -161,6 +161,15 @@ convert_profile <- function(md_path, out_dir) {
     bio              = bio,
     user_group       = user_group,
     avatar           = avatar_file,
+    output           = list(
+      html_document = list(
+        theme          = "cosmo",
+        lib_dir        = "site_libs",
+        self_contained = FALSE,
+        highlight      = "textmate",
+        css            = "../../styles.css"
+      )
+    ),
     education        = lapply(education, function(e)
       list(degree      = e$degree %||% e$course,
            institution = e$institution,
@@ -344,9 +353,28 @@ knitr::opts_chunk$set(echo = FALSE)
   .profile-layout { grid-template-columns: 1fr; gap: 40px; }
   .profile-right { padding-top: 0; }
 }
+.back-button {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+.back-button:hover {
+  background-color: #333;
+  color: white;
+}
 </style>
 
 <div class="profile-container">
+<button onclick="history.back()" class="back-button">← Back to Team</button>
 <div class="profile-layout">
 
 <div class="profile-left">
@@ -380,6 +408,8 @@ edu_html
   
   # ── 6. Write .Rmd ──────────────────────────────────────────────────────────
   base     <- tools::file_path_sans_ext(basename(md_path))
+  # Strip leading underscore if present (e.g., _index.md → index.Rmd)
+  base     <- sub("^_", "", base)
   rmd_path <- file.path(out_dir, paste0(base, ".Rmd"))
   writeLines(rmd, rmd_path, useBytes = TRUE)
   message("Converted : ", basename(md_path), " -> ", basename(rmd_path))

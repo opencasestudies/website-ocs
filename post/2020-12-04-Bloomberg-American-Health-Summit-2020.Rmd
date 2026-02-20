@@ -12,6 +12,32 @@ header:
   image: ''
   preview: yes
 ---
+
+<style>
+.back-button {
+  position: fixed;
+  top: 80px;
+  right: 24px;
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+.back-button:hover {
+  background-color: #333;
+  color: white;
+}
+</style>
+
+<button onclick="history.back()" class="back-button">← Back to Blog</button>
+
+
  
 
 We are very excited to announce that a series of our case studies funded by [Bloomberg Philanthropies](https://www.bloomberg.org/) will be showcased at the Bloomberg American Health Summit 2020 (December 9th 2020)!

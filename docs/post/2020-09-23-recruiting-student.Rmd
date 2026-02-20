@@ -12,6 +12,32 @@ header:
   image: ''
   preview: yes
 ---
+
+<style>
+.back-button {
+  position: fixed;
+  top: 80px;
+  right: 24px;
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+.back-button:hover {
+  background-color: #333;
+  color: white;
+}
+</style>
+
+<button onclick="history.back()" class="back-button">← Back to Blog</button>
+
+
  
 The Johns Hopkins Data Science Lab is seeking a Master’s student to assist with a project to create interactive elements for existing data science/public health/statistics education material as part of the open case studies project (https://opencasestudies.github.io/). This role would also involve creating websites and packages in R to make our materials more accessible to others, as well as some research to assess the utility of our materials in the classroom. We have budgeted for financial support for this student, and this work could potentially be used as a thesis project. Please contact Carrie Wright (cwrigh60@jh.edu) if you are interested in learning more!
 

@@ -13,6 +13,32 @@ header:
   preview: yes
 ---
 
+<style>
+.back-button {
+  position: fixed;
+  top: 80px;
+  right: 24px;
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+.back-button:hover {
+  background-color: #333;
+  color: white;
+}
+</style>
+
+<button onclick="history.back()" class="back-button">← Back to Blog</button>
+
+
+
 The Open Case Studies team is excited to announce 
 that case studies now have digital object identifier
 (DOIs) associated with each case study that can be used 

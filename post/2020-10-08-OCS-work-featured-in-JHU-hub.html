@@ -254,126 +254,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-
-body {
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-line-height: 1.6;
-color: #111;
-}
-a { text-decoration: underline; }
-a:hover { text-decoration: none; }
-
-.section-hero {
-background: #238A8D;
-color: #fff;
-padding: 20px 0;
-margin: -20px -20px 24px -20px; 
-}
-.hero-inner {
-max-width: 900px;
-margin: 0 auto;
-padding: 0 20px;
-}
-.hero-title {
-margin: 0;
-font-size: 2rem;
-font-weight: 700;
-}
-.hero-subtitle {
-margin: 6px 0 0 0;
-opacity: 0.95;
-}
-
-.btn-primary {
-display: inline-block;
-padding: 10px 14px;
-border-radius: 10px;
-background: #238A8D;
-color: #fff !important;
-text-decoration: none !important;
-font-weight: 600;
-border: 2px solid rgba(0,0,0,0.08);
-}
-.btn-primary:hover {
-filter: brightness(0.95);
-}
-
-.img-center {
-display: block;
-margin: 12px auto 18px auto;
-max-width: 220px;
-width: 100%;
-height: auto;
-}
-
-.guidebox,
-.topicbox {
-border-radius: 12px;
-padding: 14px 16px;
-margin: 18px 0;
-border: 1px solid rgba(0,0,0,0.08);
-background: rgba(35, 138, 141, 0.06);
-}
-.topicbox {
-background: rgba(0,0,0,0.03);
-}
-
-.video-wrap {
-position: relative;
-width: 100%;
-max-width: 900px;
-margin: 16px 0 24px 0;
-padding-top: 56.25%; 
-}
-.video-wrap iframe {
-position: absolute;
-inset: 0;
-width: 100%;
-height: 100%;
-border-radius: 12px;
-}
-
-.related-posts-section {
-margin: 48px 0 24px 0;
-padding-top: 24px;
-border-top: 2px solid rgba(35, 138, 141, 0.2);
-}
-.related-posts-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 16px;
-margin-top: 20px;
-}
-.related-post-card {
-border: 1px solid rgba(0,0,0,0.08);
-padding: 16px;
-border-radius: 12px;
-background: rgba(35, 138, 141, 0.06);
-transition: transform 0.2s;
-}
-.related-post-card:hover {
-transform: translateY(-3px);
-box-shadow: 0 2px 8px rgba(35, 138, 141, 0.15);
-}
-.related-post-card h3 {
-margin-top: 0;
-margin-bottom: 8px;
-font-size: 1.1rem;
-}
-.related-post-card h3 a {
-color: #238A8D;
-text-decoration: none;
-}
-.related-post-card h3 a:hover {
-text-decoration: underline;
-}
-.related-post-card .post-date {
-color: #666;
-font-size: 0.85em;
-margin: 0;
-}
-</style>
 
 
 
@@ -477,6 +357,30 @@ display: none;
 </div>
 
 
+<style>
+.back-button {
+position: fixed;
+top: 80px;
+right: 24px;
+z-index: 999;
+padding: 10px 20px;
+background-color: transparent;
+color: #333;
+border: 2px solid #333;
+border-radius: 4px;
+font-size: 1rem;
+cursor: pointer;
+text-decoration: none;
+transition: background-color 0.2s, color 0.2s;
+}
+.back-button:hover {
+background-color: #333;
+color: white;
+}
+</style>
+<button onclick="history.back()" class="back-button">
+← Back to Blog
+</button>
 <p>Our team’s work was recently featured in an <a href="https://hub.jhu.edu/at-work/2020/10/07/2020-delta-grants/">article</a>
 in the <a href="https://hub.jhu.edu/about/">Johns Hopkins University
 Hub</a> about the <a href="https://provost.jhu.edu/about/digital-initiatives/delta/2020-delta-awards//">Digital
@@ -486,6 +390,15 @@ awardees</a>.</p>
 <h2>Related Posts</h2>
 <div class="related-posts-section">
 <div class="related-posts-grid">
+<div class="related-post-card">
+<h3>
+<a href="2025-2-2-OCS-welcome-kate.html">Welcome Kate Isaac to the OCS
+team!</a>
+</h3>
+<div class="post-date">
+2025-02-01
+</div>
+</div>
 <div class="related-post-card">
 <h3>
 <a href="2019-02-14-case-studies-now-have-doi.html">Open Case Studies
@@ -502,15 +415,6 @@ DELTA award!</a>
 </h3>
 <div class="post-date">
 2020-07-15
-</div>
-</div>
-<div class="related-post-card">
-<h3>
-<a href="2020-11-16-welcome-Qier-Meng-and-Michael-Breshock.html">Welcome
-Qier Meng and Michael Breshock to OCS Team!</a>
-</h3>
-<div class="post-date">
-2020-11-16
 </div>
 </div>
 </div>

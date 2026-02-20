@@ -12,6 +12,32 @@ header:
   image: ''
   preview: yes
 ---
+
+<style>
+.back-button {
+  position: fixed;
+  top: 80px;
+  right: 24px;
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+.back-button:hover {
+  background-color: #333;
+  color: white;
+}
+</style>
+
+<button onclick="history.back()" class="back-button">← Back to Blog</button>
+
+
  
 We are happy to announce that on July 15th, 2020, our team was awarded a [Digital Education Learning Technology Acceleration (DELTA) grant](https://provost.jhu.edu/about/digital-initiatives/delta/) form the Johns Hopkins University Office of the Provost for our proposal entitled ["Accessible experiential lesson guide delivery platform"] (https://provost.jhu.edu/about/digital-initiatives/delta/2020-delta-awards/). 
 

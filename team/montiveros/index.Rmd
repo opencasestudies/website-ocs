@@ -9,13 +9,6 @@ bio: MHS in Epidemiology graduate student at Johns Hopkins Bloomberg School of P
   Health
 user_group: OCS Alumni
 avatar: avatar.png
-output:
-  html_document:
-    theme: cosmo
-    lib_dir: site_libs
-    self_contained: no
-    highlight: textmate
-    css: ../../styles.css
 education:
 - degree: BA in Public Health Studies
   institution: Johns Hopkins University
@@ -133,9 +126,28 @@ knitr::opts_chunk$set(echo = FALSE)
   .profile-layout { grid-template-columns: 1fr; gap: 40px; }
   .profile-right { padding-top: 0; }
 }
+.back-button {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+.back-button:hover {
+  background-color: #333;
+  color: white;
+}
 </style>
 
 <div class="profile-container">
+<button onclick="history.back()" class="back-button">← Back to Team</button>
 <div class="profile-layout">
 
 <div class="profile-left">

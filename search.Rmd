@@ -1,0 +1,41 @@
+
+```{r table-display, echo = FALSE, message=FALSE}
+library(DT)
+library(tidyverse)
+OCS_info <-read_csv("OCS_info_co2int_only.csv")
+OCS_info_table <- OCS_info %>% 
+  select(`Case Study`, `GitHub Repository`, Packages, Objectives, Category)%>%
+  DT::datatable(
+    rownames = FALSE,
+    #caption = 'Table 1: This is a simple caption for the table.',
+    class = 'cell-border stripe',
+    escape = FALSE,
+    filter = "top",
+    extensions = list("Scroller"),
+  #   options = list(autoWidth = FALSE,
+  # columnDefs = list(width = '300px', width = '200px', width = '90px', width = '200px', width = '100px'),
+  
+  options = list(autoWidth = TRUE,
+              columnDefs = list(list(targets=c(0), visible=TRUE, width='120'),
+                                list(targets=c(1), visible=TRUE, width='120'),
+                                list(targets=c(2), visible=TRUE, width='110'),
+                                list(targets=c(3), visible=TRUE, width='260'),
+                                list(targets=c(4), visible=TRUE, width='100'),
+                                list(targets='_all', visible=FALSE)),
+                                
+  pageLength = 10, scrollY = TRUE, scrollX= TRUE, scrollCollapse = TRUE, fillContainer = TRUE,
+                   initComplete = JS(
+    "function(settings, json) {",
+    "$(this.api().table().header()).css({'background-color': '#888888', 'color': '#fff'});",
+    "}"))
+  )
+  
+ 
+```
+
+<div style = "width:100%; height:auto; margin: 0; padding:10px">
+
+``` {r fig1, echo = FALSE, include=TRUE}
+ OCS_info_table
+```
+</div>

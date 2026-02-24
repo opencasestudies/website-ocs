@@ -14,9 +14,9 @@ navbar:
   - text: Talks
     href: talks.html
   - text: Contact
-    href: https://www.opencasestudies.org/
+    href: contact.html
   - text: Open Case Study Search
-    href: https://www.opencasestudies.org/ 
+    href: search.html
 
 output:
   html_document:

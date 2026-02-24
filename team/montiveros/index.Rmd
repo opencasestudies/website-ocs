@@ -147,7 +147,7 @@ knitr::opts_chunk$set(echo = FALSE)
 </style>
 
 <div class="profile-container">
-<button onclick="history.back()" class="back-button">← Back to Team</button>
+<a href="../../team.html" class="back-button">← Back to Team</a>
 <div class="profile-layout">
 
 <div class="profile-left">

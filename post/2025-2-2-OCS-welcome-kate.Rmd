@@ -37,7 +37,7 @@ content:
 }
 </style>
 
-<button onclick="history.back()" class="back-button">← Back to Blog</button>
+<a href="../blog.html" class="back-button">← Back to Blog</a>
 
 
  

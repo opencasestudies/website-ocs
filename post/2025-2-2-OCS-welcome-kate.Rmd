@@ -26,7 +26,7 @@ content:
   color: #333;
   border: 2px solid #333;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;

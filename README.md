@@ -23,7 +23,7 @@ The site is built with **R Markdown** using `rmarkdown::render_site()`. The outp
 | `search.Rmd`            | Case study search page                      |
 | `survey.Rmd`            | User survey page                            |
 | `setup.Rmd`             | About page                                  |
-| `_site.yml`             | Site-wide config (navbar, theme, CSS)       |
+| `_site.yml`             | Site-wide config (navbar, theme)       |
 | `styles.css`            | Global CSS styles                           |
 | `resources/header.html` | Custom HTML injected into every page header |
 

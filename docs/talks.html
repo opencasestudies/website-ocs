@@ -11,7 +11,7 @@
 
 
 
-<title>Git Actions</title>
+<title>Recent Talks</title>
 
 <script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -260,7 +260,7 @@ $(document).ready(function () {
   <a href="team.html">Team</a>
 </li>
 <li>
-  <a href="git_actions.html">Talks</a>
+  <a href="talks.html">Talks</a>
 </li>
 <li>
   <a href="https://www.opencasestudies.org/">Contact</a>
@@ -280,69 +280,222 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Git Actions</h1>
+<h1 class="title toc-ignore">Recent Talks</h1>
 
 </div>
 
 
-<p>We have set up several checks for website content edits.</p>
-<p>When you create a pull request, you will see something like this if
-everything is successful. You can click on the
-<code>preview of website here</code> link to see a preview. Please note
-that some features may not be possible to see in the preview. For
-example, icons may only show up as a box.</p>
-<p><img src="resources/images/checks.png" alt="pull request checks" width="70%" style="display: block; margin: auto;" /></p>
-<div id="rendering-action" class="section level2">
-<h2>Rendering Action</h2>
-<p>If the rendering action fails, you will see something like this:</p>
-<p><img src="resources/images/render_fail.png" alt="render issue pull request image" width="80%" style="display: block; margin: auto;" /></p>
-<p>If you click on where it says <code>Details</code> on the far right,
-you will be taken to more information about what may have gone
-wrong.</p>
-<p><img src="resources/images/render_fail2.png" alt="render issue pull request image" width="80%" style="display: block; margin: auto;" /></p>
-<p>For example, we can see that an R object was not found in one of the
-files. You could identify which file by scrolling up.</p>
-<p><img src="resources/images/render_fail_details.png" alt="render issue pull request image" width="80%" style="display: block; margin: auto;" /></p>
+<style>
+.talks-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 120px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 117px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #238A8D, #BFD7B5);
+}
+
+.timeline-year {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.year-label {
+  position: absolute;
+  left: -120px;
+  width: 106px;
+  text-align: right;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #238A8D;
+  line-height: 1;
+  padding-top: 4px;
+}
+
+
+.year-label::after {
+  content: '';
+  position: absolute;
+  right: -21px;
+  top: 7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #238A8D;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #238A8D;
+}
+
+.year-talks {
+  padding: 0 0 30px 24px;
+  margin: 0;
+  list-style: none;
+}
+
+.year-talks li {
+  position: relative;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-left: 3px solid #BFD7B5;
+  background: #f9f9f9;
+  border-radius: 0 6px 6px 0;
+  font-size: 2rem;
+  line-height: 1.7;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.year-talks li:hover {
+  border-left-color: #238A8D;
+  background: #f0f7f7;
+}
+
+.video-container {
+  margin: 10px 0 16px 24px;
+  padding: 10px 14px;
+  background: #f9f9f9;
+  border-left: 3px solid #BFD7B5;
+  border-radius: 0 6px 6px 0;
+}
+
+.video-container iframe {
+  display: block;
+  max-width: 100%;
+}
+</style>
+<div class="talks-page">
+<div class="timeline">
+<div class="timeline-year">
+<div class="year-label">
+2024
 </div>
-<div id="spelling-and-style-action" class="section level2">
-<h2>Spelling and Style Action</h2>
-<p>You may find that you have spelling errors if you get the following
-message from your pull request (PR):</p>
-<p><img src="resources/images/spelling.png" alt="spelling issue pull request image" width="80%" style="display: block; margin: auto;" /></p>
-<p>If this happens, click the <code>Download the errors here.</code>
-link. This will take you to a table with words that the check thought
-were misspelled, as well as what file they occurred in and the lines in
-that file.</p>
-<p>Add words that are <strong>not</strong> actually misspelled to the
-<code>dictionary.txt</code> file located in the <code>resources</code>
-directory. It’s a good idea to try to keep this in alphabetical
-order.</p>
-<p>For words that are indeed misspelled, fix the errors and push your
-changes to your pull request.</p>
-<p>You should then see that your pull request has a different message
-that tells you that you have no spelling errors.</p>
+<ul class="year-talks">
+<li>
+<a href="https://docs.google.com/presentation/d/1GpwNqoEYbDK2xN_u4WoOFJAB9mDBCuOhhXu0NzsBy18/edit?usp=sharing">Exploring
+initiatives to promote more comprehensive data science and statistical
+education</a>. <a href="https://stat.utexas.edu/">The University of
+Texas at Austin, Department of Statistics and Data Sciences</a>. Austin,
+Texas, USA.
+</li>
+</ul>
 </div>
-<div id="url-check" class="section level2">
-<h2>URL Check</h2>
-<p>You may find that you have broken URLs. If so, you will get this
-message when you create a Pull Request.</p>
-<p><img src="resources/images/url_check.png" alt="URL issue pull request image" width="80%" style="display: block; margin: auto;" />
-You can click on the <code>Download the errors here</code> link to see a
-document with a list of broken URLs and what files they are located in,
-like this:</p>
-<p><img src="resources/images/urls.png" alt="broken url list" width="80%" style="display: block; margin: auto;" /></p>
-<p>Here we can see that there are two URLs that are broken in the
-<code>git_actions.Rmd</code> file.</p>
+<div class="timeline-year">
+<div class="year-label">
+2023
 </div>
-<div id="completing-a-pull-request" class="section level2">
-<h2>Completing a Pull Request</h2>
-<p>Once all the Git Action checks pass, you can merge your pull request
-to your main branch for your website.</p>
-<p><img src="resources/images/checks2.png" alt="finishing a pull request" width="80%" style="display: block; margin: auto;" /></p>
-<p>If you are only working on this yourself without others to review
-your pull request, you can click the
-<code>Merge without waiting for requirements to be met</code> box, so
-that you can click the <code>Merge pull request</code> button.</p>
+<ul class="year-talks">
+<li>
+Problem-forward Statistics and Data Science to Improve Human Health.
+Myrto Lefkopoulou Distinguished Lectureship. Harvard T. H. Chan School
+of Public Health.
+(<a href="https://www.hsph.harvard.edu/biostatistics/myrto-award/">link</a>).
+Hicks, Stephanie. 2023 Sept 21. Boston, MA. USA.
+</li>
+<li>
+<a href="https://docs.google.com/presentation/d/1ydwawEhVnJoIqr4wejmxEcwU5O2ba7SvQq2B_WlR628/edit?usp=sharing">Reimagining
+Research Training Through Holistic Data Science Education</a>.
+<a href="https://www.biostat.washington.edu/">University of Washington
+Department of Biostatistics Seminar</a>. Wright, Carrie. 2023 May 4th.
+Seattle, WA. USA. (Virtual).
+</li>
+</ul>
+</div>
+<div class="timeline-year">
+<div class="year-label">
+2022
+</div>
+<ul class="year-talks">
+<li>
+<a href="https://docs.google.com/presentation/d/1rN1oNZ-On4vuPanktF-HVQcS_Fr3mSqKu6pcxfwsgJI/edit?usp=sharing">Case
+studies to community engagement: Bringing hands-on data science
+experiences to the classroom</a>.
+<a href="https://www.icsa.org/">International Chinese Statistical
+Association (ICSA)</a>. Wright, Carrie. 2022 June 20th. Gainesville,
+Florida.
+</li>
+</ul>
+</div>
+<div class="timeline-year">
+<div class="year-label">
+2021
+</div>
+<ul class="year-talks">
+<li>
+<a href="https://docs.google.com/presentation/d/1ueWL8XDlifDTsPlAG8lhPx37zzm1YlGKeaNu6gf8CXk/edit?usp=sharing">Addressing
+Open Challenges in Data Science Education</a>. Hicks, Stephanie.
+Department of Statistics, University of British Columbia. 2021 Feb 9.
+Vancouver, BC. Canada. (Virtual).
+</li>
+</ul>
+</div>
+<div class="timeline-year">
+<div class="year-label">
+2020
+</div>
+<ul class="year-talks">
+<li>
+<a href="https://docs.google.com/presentation/d/18jymRcaW2eh6cNmN6HbazaTg8OJFToQ28kvIpeN4CGg/edit?usp=sharing">Open
+Case Studies</a>. Hicks, Stephanie and Wright, Carrie.
+<a href="https://americanhealth.jhu.edu/2020-bloomberg-american-health-summit">Bloomberg
+American Health Summit 2020</a>. 2020 Dec 9. Baltimore, MD. USA.
+(Virtual).
+</li>
+</ul>
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T1B5q6jdP6U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<ul class="year-talks">
+<li>
+<a href="https://docs.google.com/presentation/d/1wSuRsSwI-uEyiPqtXEW12CBwr5qULK6zO7aPHsUH8T8/edit?usp=sharing">Communicating
+statistics and data science to the masses via Open Case Studies.</a>
+Hicks, Stephanie.
+<a href="https://ww2.amstat.org/meetings/jsm/2020/">Joint Statistical
+Meetings.</a> 2020 Aug 1-6. Philadelphia, PA, USA. (Virtual due to
+COVID-19).
+</li>
+<li>
+<a href="https://docs.google.com/presentation/d/10lRcBMdZ_lzWWCW46t1rThJ1kVm7Ip0Yx3UIdicUEAg/edit?usp=sharing">Addressing
+Real-World Challenges through Data Science Education</a>. Hicks,
+Stephanie.
+<a href="https://alliance4datascience.ai/get-involved/projects-working-groups/#active-groups">Academic
+Data Science Alliance (ADSA) Data Science Education special interest
+group (SIG)</a>. 2020 Jul 2.
+</li>
+</ul>
+</div>
+<div class="timeline-year">
+<div class="year-label">
+2019
+</div>
+<ul class="year-talks">
+<li>
+<a href="https://docs.google.com/presentation/d/1emK1ORCmRaJLYDYwWPGhaqNRY2D8cdem_EIFmCmqS00/edit?usp=sharing">Addressing
+Public Health Challenges through Data Science Education</a>. Hicks,
+Stephanie. <a href="https://www.apha.org/annualmeeting">American Public
+Health Association Annual Meeting</a>. 2019 Nov 2-6. Philadelphia, PA,
+USA.
+</li>
+<li>
+Motivating Data Science through Case Studies in Public Health.
+<a href="https://www.enar.org">Eastern North American Region (ENAR)
+Meeting of the International Biometric Society</a>. Jager, Leah. 2019
+March 27. Philadelphia, PA, USA.
+</li>
+</ul>
+</div>
+</div>
 </div>
 
 

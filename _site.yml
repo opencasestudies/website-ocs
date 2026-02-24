@@ -12,7 +12,7 @@ navbar:
   - text: Team
     href: team.html
   - text: Talks
-    href: git_actions.html
+    href: talks.html
   - text: Contact
     href: https://www.opencasestudies.org/
   - text: Open Case Study Search

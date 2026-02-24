@@ -6,7 +6,7 @@ organization: Stephanie Hicks, PhD
 organization_url: ''
 email: shicks19@jhu.edu
 bio: Assistant Professor at the Johns Hopkins Bloomberg School of Public Health
-user_group: Principal Investigator
+user_group: Faculty
 avatar: avatar.jpg
 education:
 - degree: Postdoctoral Training

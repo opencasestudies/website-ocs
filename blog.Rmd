@@ -7,7 +7,6 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
 ```{css}
-/* Posts grid styling */
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -22,6 +21,8 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
   border-radius: 12px;
   background: rgba(35, 138, 141, 0.06);
   transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 
 .post-card:hover {
@@ -59,7 +60,8 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
   color: #444;
   line-height: 1.5;
   font-size: 0.95em;
-  margin-top: 0;
+  margin-top: auto;
+  padding-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -70,7 +72,6 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
 ```{r generate-posts, results='asis'}
-# List all markdown files in content/post directory
 post_files <- list.files("post", pattern = "\\.Rmd$", full.names = TRUE)
 
 # Function to extract metadata from YAML frontmatter
@@ -103,50 +104,21 @@ extract_metadata <- function(file) {
     "No date"
   }
   
-  # Extract excerpt/summary if available
-  summary_line <- yaml_lines[grep("^summary:|^excerpt:", yaml_lines)]
-  excerpt <- if (length(summary_line) > 0) {
-    gsub("summary:\\s*['\"]?|excerpt:\\s*['\"]?|['\"]?$", "", summary_line[1])
+  # Extract author
+  author_line <- yaml_lines[grep("^author:", yaml_lines)]
+  author <- if (length(author_line) > 0) {
+    gsub("author:\\s*['\"]?|['\"]?$", "", author_line[1])
   } else {
-    # Get first non-empty paragraph after YAML as excerpt
-    content_lines <- lines[(yaml_end + 1):length(lines)]
-    content_lines <- trimws(content_lines)
-    content_lines <- content_lines[nzchar(content_lines)]
-    
-    if (length(content_lines) > 0) {
-      for (line in content_lines) {
-        clean_line <- gsub("^#+\\s*", "", line)
-        clean_line <- gsub("\\[([^]]+)\\]\\([^)]+\\)", "\\1", clean_line)
-        clean_line <- gsub("\\*\\*|__", "", clean_line)
-        clean_line <- gsub("\\*|_", "", clean_line)
-        clean_line <- trimws(clean_line)
-        
-        if (nchar(clean_line) > 20) {
-          excerpt <- substr(clean_line, 1, 150)
-          break
-        }
-      }
-      
-      if (!exists("excerpt")) {
-        excerpt <- substr(content_lines[1], 1, 150)
-      }
-      excerpt
-    } else {
-      "Click to read more..."
-    }
+    ""
   }
   
-  if (is.null(excerpt) || excerpt == "" || is.na(excerpt)) {
-    excerpt <- "Click to read more..."
-  }
-  
-  # Path to HTML file in docs output
+  # Path to HTML file
   html_file <- paste0("post/", gsub("\\.Rmd$", ".html", basename(file)))
   
   list(
     title = title,
     date = date,
-    excerpt = excerpt,
+    author = author,
     file = html_file,
     sort_date = tryCatch(as.Date(date, format = "%Y-%m-%d"), error = function(e) Sys.Date())
   )
@@ -170,11 +142,11 @@ for (post in posts) {
 
 <div class="post-date">%s</div>
 
-<div class="post-excerpt">%s...</div>
+<div class="post-excerpt">%s</div>
 
 </div>
 
-', post$title, post$file, post$date, post$excerpt))
+', post$title, post$file, post$date, post$author))
 }
 
 cat('\n</div>\n')

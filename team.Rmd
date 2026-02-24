@@ -46,19 +46,17 @@ p, h1, h2, h3, h4 {
   display: block;
 }
 .team-grid {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 60px;
-  margin: 40px auto !important;
+  display: block;
   width: 100%;
-  padding: 0 20px;
   text-align: center;
+  margin: 40px 0;
+  padding: 0;
 }
 .team-card-link {
   text-decoration: none;
-  display: block;
+  display: inline-block;
+  margin: 20px 30px;
+  vertical-align: top;
 }
 .team-card {
   text-align: center !important;
@@ -155,22 +153,18 @@ cat('\n<h1 class="page-header">Team</h1>\n')
 
 # Display each group
 for (group_name in names(groups)) {
-  cat(sprintf('\n<h2 class="group-header">%s</h2>\n', group_name))
-  cat('<div class="team-grid">\n')
+  cat('\n<div style="width:100%;text-align:center;">\n')
+  cat(sprintf('<h2 class="group-header">%s</h2>\n', group_name))
+  cat('<div class="team-grid">')
   
+  cards <- character(0)
   for (username in names(groups[[group_name]])) {
     member <- groups[[group_name]][[username]]
-    cat(sprintf('
-<a href="team/%s/index.html" class="team-card-link">
-<div class="team-card">
-<img src="%s" alt="%s" class="team-avatar">
-<h3 class="team-name">%s</h3>
-<div class="team-role">%s</div>
-</div>
-</a>
-', username, member$avatar, member$name, member$name, member$role %||% ""))
+    cards <- c(cards, sprintf('<a href="team/%s/index.html" class="team-card-link"><div class="team-card"><img src="%s" alt="%s" class="team-avatar"><h3 class="team-name">%s</h3><div class="team-role">%s</div></div></a>', username, member$avatar, member$name, member$name, member$role %||% ""))
   }
+  cat(paste(cards, collapse = ""))
   
+  cat('</div>\n')
   cat('</div>\n')
 }
 ```

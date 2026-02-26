@@ -8,4 +8,4 @@ output:
 
 If you have questions please contact:
 
-* Carrie Wright (cwrigh60@jhu.edu)
+* Carrie Wright (cwright2@fredhutch.org)

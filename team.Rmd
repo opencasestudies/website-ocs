@@ -151,7 +151,7 @@ groups <- groups[ordered_names]
 
 # Define explicit member ordering within groups
 member_order <- list(
-  "Principal Investigator" = c("shicks", "cwright", "ahoffman")
+  "Principal Investigators" = c("shicks", "cwright", "ahoffman")
 )
 
 # Apply member ordering where specified

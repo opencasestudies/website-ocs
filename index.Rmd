@@ -171,6 +171,35 @@ courses at many universities, including:
 </div>
 ```
 
+<div id="publications" class="section" style="background: #fff;">
+<div class="section-content">
+
+## Highlighted Publication
+
+<div style="border-left: 4px solid #238A8D; padding: 12px 20px; margin: 16px 0; background: #f9f9f9; border-radius: 0 6px 6px 0;">
+<!-- <div > -->
+<!-- <a href="https://www.tandfonline.com/doi/full/10.1080/26939169.2024.2394541" target="_blank" rel="noopener" style="color: #238A8D; text-decoration: none;"> -->
+<!-- Open Case Studies: Statistics and Data Science Education through Real-World Applications -->
+<!-- </a> -->
+<!-- </div> -->
+
+<!-- <div style="color: #555; margin-bottom: 4px;">Carrie Wright, Qier Meng, Michael R. Breshock, Lyla Atta, Margaret A. Taub, Leah R. Jager</div> -->
+
+<div style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0px;">
+Carrie Wright, Qier Meng, Michael R. Breshock, Lyla Atta, Margaret A. Taub, Leah R. Jager, John Muschelli & Stephanie C. Hicks
+</div>
+
+<div style="color: #555; margin-bottom: 1px; font-size: 2rem;">
+<a href="https://www.tandfonline.com/doi/full/10.1080/26939169.2024.2394541" target="_blank" rel="noopener" style="color: #238A8D; text-decoration: none;">
+Open Case Studies: Statistics and Data Science Education through Real-World Applications
+</a>
+</div>
+
+<div style="color: #888; font-size: 1rem;"><em>Journal of Statistics and Data Science Education</em>, Pages 331–344. Published online: 24 Sep 2024.</div>
+</div>
+
+</div>
+</div>
 
 
 <div id="survey" class="section section-survey">
@@ -184,6 +213,7 @@ Help us improve Open Case Studies by sharing your feedback.
 
 </div>
 </div>
+
 
 <div id="blog" class="section section-blog">
 <div class="section-content">

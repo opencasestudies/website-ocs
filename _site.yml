@@ -11,6 +11,8 @@ navbar:
     href: blog.html
   - text: Team
     href: team.html
+  - text: Events
+    href: events.html
   - text: Talks
     href: talks.html
   - text: Contact

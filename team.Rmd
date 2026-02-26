@@ -142,12 +142,28 @@ for (username in names(team_members)) {
   groups[[group]][[username]] <- member
 }
 
-group_order <- c("Faculty", "Research Assistants", "Bio OCS", "OCS Alumni")
+group_order <- c("Faculty", "Research Assistants", "OCS Alumni","Administration", "Principal Investigators")
 ordered_names <- c(
   intersect(group_order, names(groups)),
   setdiff(names(groups), group_order)
 )
 groups <- groups[ordered_names]
+
+# Define explicit member ordering within groups
+member_order <- list(
+  "Principal Investigator" = c("shicks", "cwright", "ahoffman")
+)
+
+# Apply member ordering where specified
+for (grp in names(member_order)) {
+  if (!is.null(groups[[grp]])) {
+    order <- c(
+      intersect(member_order[[grp]], names(groups[[grp]])),
+      setdiff(names(groups[[grp]]), member_order[[grp]])
+    )
+    groups[[grp]] <- groups[[grp]][order]
+  }
+}
 
 cat('\n<h1 class="page-header">Team</h1>\n')
 

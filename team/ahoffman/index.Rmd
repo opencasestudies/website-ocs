@@ -1,0 +1,181 @@
+---
+title: Ava Hoffman, PhD
+name: Ava Hoffman, PhD
+role: Senior Scientist
+organization: Fred Hutchinson Cancer Center
+organization_url: 'https://www.fredhutch.org'
+email: ahoffma2@fredhutch.org
+bio: Senior Scientist at Fred Hutch Cancer Center studying genetics and data science education
+user_group: Principal Investigators
+avatar: avatar.png
+education:
+- degree: Ph.D. in Ecology
+  institution: Colorado State University
+  year: 2019
+social:
+  email: mailto:ahoffma2@fredhutch.org
+  website: https://avahoffman.com
+  linkedin: https://www.linkedin.com/in/avahoffman/
+  scholar: https://scholar.google.com/citations?user=k6RyLHsAAAAJ&hl=en
+  github: https://github.com/avahoffman
+  bluesky: https://bsky.app/profile/avahoffman.com
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<style>
+.profile-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 40px;
+}
+.profile-layout {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.profile-left { text-align: center; }
+.profile-avatar {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 30px auto;
+  display: block;
+}
+.profile-name {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #333;
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+}
+.profile-role {
+  font-size: 1.1rem;
+  color: #888;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+}
+.profile-org {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+}
+.profile-org a { color: #1e90ff; text-decoration: none; }
+.profile-org a:hover { text-decoration: underline; }
+.profile-org-secondary {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0 0 30px 0;
+}
+.social-links-large {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+.social-links-large a {
+  color: #1e90ff;
+  transition: transform 0.2s, color 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.social-links-large a svg { fill: #1e90ff; }
+.social-links-large a:hover { transform: scale(1.15); color: #0066cc; }
+.social-links-large a:hover svg { fill: #0066cc; }
+.profile-right { padding-top: 40px; }
+.bio-section p {
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 16px;
+}
+.education-section { margin-top: 50px; }
+.education-section h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #333;
+  margin: 0 0 30px 0;
+}
+.education-item {
+  margin: 0 0 30px 0;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.education-icon { font-size: 2rem; color: #333; margin-top: 5px; }
+.education-content { flex: 1; }
+.education-degree {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.7rem;
+  margin-bottom: 4px;
+}
+.education-institution { color: #666; margin-bottom: 2px; }
+@media (max-width: 900px) {
+  .profile-layout { grid-template-columns: 1fr; gap: 40px; }
+  .profile-right { padding-top: 0; }
+}
+.back-button {
+  position: fixed;
+  top: 40px;
+  right: 60px;
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+.back-button:hover {
+  background-color: #333;
+  color: white;
+}
+</style>
+
+<div class="profile-container">
+<a href="../../team.html" class="back-button">← Back to Team</a>
+<div class="profile-layout">
+
+<div class="profile-left">
+<img src="avatar.png" alt="Ava Hoffman, PhD" class="profile-avatar">
+<h1 class="profile-name">Ava Hoffman, PhD</h1>
+<div class="profile-role">Senior Scientist</div>
+<div class="profile-org"><a href="https://www.fredhutch.org">Fred Hutchinson Cancer Center</a></div>
+<div class="profile-org-secondary">Associate Faculty, Johns Hopkins University (Biostatistics)</div>
+<div class="social-links-large">
+<a href="mailto:ahoffma2@fredhutch.org" title="Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+<a href="https://avahoffman.com" title="Website"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></a>
+<a href="https://www.linkedin.com/in/avahoffman/" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+<a href="https://scholar.google.com/citations?user=k6RyLHsAAAAJ&hl=en" title="Google Scholar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg></a>
+<a href="https://github.com/avahoffman" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg></a>
+<a href="https://bsky.app/profile/avahoffman.com" title="Bluesky"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.567 6.475.806 3.365 3.732 4.5 6.432 4.18-3.153.16-6.128 1.234-6.128 4.61 0 3.373 3.068 5.967 6.432 5.967 3.363 0 5.574-2.246 5.697-2.39.123.144 2.334 2.39 5.697 2.39 3.364 0 6.432-2.594 6.432-5.967 0-3.376-2.975-4.45-6.128-4.61 2.7.32 5.626-.815 6.432-4.18C23.622 9.418 24 4.458 24 3.768c0-.688-.139-1.86-.902-2.203-.659-.299-1.664-.62-4.3 1.24C16.046 4.747 13.087 8.686 12 10.8z"/></svg></a>
+</div>
+</div>
+
+<div class="profile-right">
+<div class="bio-section">
+<p>I'm currently a Senior Scientist at Fred Hutch Cancer Center studying genetics and data science education. I lead several education grant programs through the National Institutes of Health, including Data Science for Environmental Health, Genomic Education Modules (GEMs), and Biomedical Open Case Studies. I'm also deeply involved with the Genomic Data Science Community Network and the AnVIL, a cloud computing platform. At the core of my work is centering community while furthering data-intensive education and research.</p>
+</div>
+
+<div class="education-section">
+<h2>Education</h2>
+<div class="education-item">
+<div class="education-icon">&#127891;</div>
+<div class="education-content">
+<div class="education-degree">Ph.D. in Ecology, 2019</div>
+<div class="education-institution">Colorado State University</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>

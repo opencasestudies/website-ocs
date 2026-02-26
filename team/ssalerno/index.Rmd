@@ -1,12 +1,12 @@
 ---
-title: Stephen Salerno
-name: Stephen Salerno
+title: Stephen Salerno, PhD
+name: Stephen Salerno, PhD
 role: Research Assistant
 organization: Fred Hutchinson Cancer Center
 organization_url: 'https://www.fredhutch.org'
 email: ssalerno@fredhutch.org
 bio: Postdoctoral Fellow in Biostatistics at the Fred Hutchinson Cancer Center
-user_group: Bio OCS
+user_group: Research Assistants
 avatar: avatar.png
 education:
 - degree: Ph.D. in Biostatistics

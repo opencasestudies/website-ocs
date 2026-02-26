@@ -7,7 +7,7 @@ organization_url: ''
 email: cwrigh60@jh.edu
 bio: Senior Staff Scientist at the Fred Hutchinson Cancer Center and affiliated faculty
   member at the Johns Hopkins Bloomberg School of Public Health.
-user_group: Faculty
+user_group: Principal Investigators
 avatar: avatar.jpg
 education:
 - degree: Postdoctoral Fellow

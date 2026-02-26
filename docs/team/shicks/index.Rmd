@@ -1,12 +1,12 @@
 ---
 title: Stephanie Hicks, PhD
 name: Stephanie Hicks, PhD
-role: Assistant Professor (Principal Investigator)
+role: Assistant Professor
 organization: Stephanie Hicks, PhD
 organization_url: ''
 email: shicks19@jhu.edu
 bio: Assistant Professor at the Johns Hopkins Bloomberg School of Public Health
-user_group: Faculty
+user_group: Principal Investigators
 avatar: avatar.jpg
 education:
 - degree: Postdoctoral Training

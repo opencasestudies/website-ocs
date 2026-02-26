@@ -1,7 +1,7 @@
 ---
-title: Oshane Thomas
-name: Oshane Thomas
-role:
+title: Oshane Thomas, PhD
+name: Oshane Thoma, PhD
+role: Research Assistant
 organization: Fred Hutchinson Cancer Center
 organization_url: 'https://www.fredhutch.org'
 email:

@@ -9,6 +9,17 @@ body {
 a { text-decoration: underline; }
 a:hover { text-decoration: none; }
 
+/* Remove underline from navbar links */
+.navbar a,
+.navbar-nav a,
+.navbar-nav > li > a {
+  text-decoration: none !important;
+}
+.navbar a:hover,
+.navbar-nav a:hover {
+  text-decoration: none !important;
+}
+
 /* Hero header (replacement for Hugo background section) */
 .section-hero {
   background: #238A8D;

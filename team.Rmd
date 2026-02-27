@@ -142,7 +142,7 @@ for (username in names(team_members)) {
   groups[[group]][[username]] <- member
 }
 
-group_order <- c("Faculty", "Research Assistants", "OCS Alumni","Administration", "Principal Investigators")
+group_order <- c("Faculty", "Research Assistants", "OCS Alumni", "Administration", "Principal Investigators", "Consultants")
 ordered_names <- c(
   intersect(group_order, names(groups)),
   setdiff(names(groups), group_order)
@@ -151,7 +151,8 @@ groups <- groups[ordered_names]
 
 # Define explicit member ordering within groups
 member_order <- list(
-  "Principal Investigators" = c("shicks", "cwright", "ahoffman")
+  "Principal Investigators" = c("shicks", "cwright", "ahoffman"), 
+  "Consultants" = c("psaravanan", "adillman")
 )
 
 # Apply member ordering where specified

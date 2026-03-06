@@ -202,6 +202,30 @@ Open Case Studies: Statistics and Data Science Education through Real-World Appl
 </div>
 
 
+<div id="projects" class="section" style="background: #fff;">
+<div class="section-content">
+
+## Our Projects
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin: 24px 0;">
+
+<div style="border-left: 4px solid #003366; padding: 12px 20px; margin: 16px 0; background: #f9f9f9; border-radius: 0 6px 6px 0;">
+<h3 style="color: #003366; margin: 0 0 10px 0;">Bloomberg American Health Case Studies</h3>
+<p style="color: #555; line-height: 1.6; margin: 0 0 16px 0;">Open case studies on public health topics, developed in partnership with the Bloomberg American Health Initiative at Johns Hopkins.</p>
+<a href="bloomberg.html" style="color: #003366; font-weight: 600; text-decoration: none;">Learn more →</a>
+</div>
+
+<div style="border-left: 4px solid #1a7a4a; padding: 12px 20px; margin: 16px 0; background: #f9f9f9; border-radius: 0 6px 6px 0;">
+<h3 style="color: #1a7a4a; margin: 0 0 10px 0;">BioOCS</h3>
+<p style="color: #555; line-height: 1.6; margin: 0 0 16px 0;">Open case studies for the biomedical sciences, bringing real-world quantitative biology education to students, instructors, and independent learners.</p>
+<a href="bioocs.html" style="color: #1a7a4a; font-weight: 600; text-decoration: none;">Learn more →</a>
+</div>
+
+</div>
+
+</div>
+</div>
+
 <div id="survey" class="section section-survey">
 <div class="section-content">
 

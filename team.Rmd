@@ -142,7 +142,7 @@ for (username in names(team_members)) {
   groups[[group]][[username]] <- member
 }
 
-group_order <- c("Faculty", "Research Assistants", "OCS Alumni", "Administration", "Principal Investigators", "Consultants")
+group_order <- c("Principal Investigators", "Faculty", "Research Assistants", "OCS Alumni", "Administration",  "Consultants")
 ordered_names <- c(
   intersect(group_order, names(groups)),
   setdiff(names(groups), group_order)

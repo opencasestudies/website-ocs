@@ -1,0 +1,93 @@
+---
+title: "Bloomberg American Health Case Studies"
+description: "Open Case Studies funded by the Bloomberg American Health Initiative — real-world public health data science education."
+---
+
+```{css, echo=FALSE}
+.bloomberg-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: white;
+  color: #003366;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 6px;
+}
+.bloomberg-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  color: #003366;
+  text-decoration: none;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin: 32px 0;
+}
+.feature-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 28px 24px;
+  border-left: 4px solid #003366;
+}
+.feature-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #003366;
+  margin: 0 0 10px 0;
+}
+.feature-card p {
+  color: #555;
+  font-size: 0.97rem;
+  line-height: 1.6;
+  margin: 0;
+}
+.pub-card {
+  border-left: 4px solid #003366;
+  padding: 14px 20px;
+  margin: 16px 0;
+  background: #f9f9f9;
+  border-radius: 0 6px 6px 0;
+}
+.pub-card a {
+  font-weight: 600;
+  color: #003366;
+}
+.coming-soon-box {
+  background: #f0f4f8;
+  border: 1.5px dashed #003366;
+  border-radius: 8px;
+  padding: 28px 32px;
+  text-align: center;
+  color: #555;
+  margin-top: 16px;
+}
+.coming-soon-box h3 {
+  color: #003366;
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+}
+section {
+  margin-bottom: 48px;
+}
+```
+---
+
+<section>
+
+<img src="resources/bloomberg_ocs_logo.png" alt="Bloomberg American Health Initiative logo" style="max-width: 320px; margin-bottom: 24px; display: block;">
+
+## About the Project
+
+As part of the larger Open Case Studies project (OCS) at opencasestudies.org, these case studies were developed for and funded by the [Bloomberg American Health Initiative](https://americanhealth.jhu.edu/bloomberg-american-health-open-case-studies-project). The OCS project is made up of a team of researchers at the Johns Hopkins Bloomberg School of Public Health (JHSPH).
+
+</section>
+
+```{=html}
+<p style="margin: 24px 0;"><a href="search.html" class="bloomberg-btn" style="background:#003366; color:white;font-size:14px">Browse Case Studies →</a></p>
+```
+

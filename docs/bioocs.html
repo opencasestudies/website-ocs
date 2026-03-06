@@ -11,9 +11,9 @@
 
 
 
-<title>Contact Us</title>
+<title>BioOCS</title>
 
-<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -295,16 +295,111 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><strong>Contact Us</strong></h1>
+<h1 class="title toc-ignore">BioOCS</h1>
 
 </div>
 
 
-<p>If you have questions please contact:</p>
-<ul>
-<li>Carrie Wright (<a href="mailto:cwright2@fredhutch.org"
-class="email">cwright2@fredhutch.org</a>)</li>
-</ul>
+<style type="text/css">
+.bioocs-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: white;
+  color: #1a7a4a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 6px;
+}
+.bioocs-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  color: #1a7a4a;
+  text-decoration: none;
+}
+.bioocs-btn.disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin: 32px 0;
+}
+.feature-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 28px 24px;
+  border-left: 4px solid #1a7a4a;
+}
+.feature-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1a7a4a;
+  margin: 0 0 10px 0;
+}
+.feature-card p {
+  color: #555;
+  font-size: 0.97rem;
+  line-height: 1.6;
+  margin: 0;
+}
+.coming-soon-box {
+  background: #f0f7f4;
+  border: 1.5px dashed #1a7a4a;
+  border-radius: 8px;
+  padding: 28px 32px;
+  text-align: center;
+  color: #555;
+  margin: 24px 0;
+}
+.coming-soon-box h3 {
+  color: #1a7a4a;
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+}
+.events-box {
+  background: #f9f9f9;
+  border-left: 4px solid #238A8D;
+  border-radius: 0 8px 8px 0;
+  padding: 24px 28px;
+  margin-top: 16px;
+}
+.events-box h3 {
+  color: #238A8D;
+  margin: 0 0 10px 0;
+}
+section {
+  margin-bottom: 48px;
+}
+</style>
+<hr />
+<section>
+<p><img src="resources/bio_ocs_logo.png" alt="BioOCS logo" style="max-width: 320px; margin-bottom: 24px; display: block;"></p>
+<div id="about-bioocs" class="section level2">
+<h2>About BioOCS</h2>
+<p>BioOCS is an extension of the <a
+href="https://opencasestudies.github.org/">Open Case Studies</a> project
+focused on the biomedical sciences. BioOCS is designed for learners in
+biology, biomedical research, and quantitative biology.</p>
+</section>
+<section id="case-studies">
+<!-- ## Case Studies -->
+<div class="coming-soon-box">
+<h3>
+Coming Soon
+</h3>
+<p>
+BioOCS case studies are currently in development. Check back for updates
+as new case studies are released.
+</p>
+</div>
+</section>
+</div>
 
 
 

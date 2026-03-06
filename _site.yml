@@ -7,6 +7,12 @@ navbar:
   #   href: setup.html
   - text: Survey
     href: survey.html
+  - text: Projects
+    menu:
+    - text: Bloomberg Case Studies
+      href: bloomberg.html
+    - text: BioOCS
+      href: bioocs.html
   - text: Blog
     href: blog.html
   - text: Team

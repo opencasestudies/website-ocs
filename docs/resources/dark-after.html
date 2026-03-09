@@ -1,0 +1,184 @@
+<style id="dark-mode-styles">
+
+html.dark-mode body {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+html.dark-mode .main-container,
+html.dark-mode #main-content {
+  background-color: #121212 !important;
+}
+
+/* ── Typography ── */
+html.dark-mode h1, html.dark-mode h2,
+html.dark-mode h3, html.dark-mode h4,
+html.dark-mode h5, html.dark-mode h6,
+html.dark-mode .h1, html.dark-mode .h2,
+html.dark-mode .h3, html.dark-mode .h4 {
+  color: #f0f0f0 !important;
+}
+html.dark-mode p, html.dark-mode li { color: #e0e0e0 !important; }
+html.dark-mode a { color: #4fbfc4 !important; }
+html.dark-mode a:hover { color: #fbb731 !important; }
+html.dark-mode strong { color: #f0f0f0 !important; }
+html.dark-mode hr { border-color: #333 !important; }
+
+/* ── Navbar ── */
+html.dark-mode .navbar {
+  background-color: #1a1a1a !important;
+  border-color: #333 !important;
+}
+html.dark-mode .navbar .navbar-brand,
+html.dark-mode .navbar-nav > li > a {
+  color: #4fbfc4 !important;
+}
+html.dark-mode .navbar-nav > li > a:hover { color: #fbb731 !important; }
+html.dark-mode .dropdown-menu {
+  background-color: #1e1e1e !important;
+  border-color: #444 !important;
+}
+html.dark-mode .dropdown-menu > li > a { color: #e0e0e0 !important; }
+html.dark-mode .dropdown-menu > li > a:hover {
+  background-color: #2a2a2a !important;
+  color: #4fbfc4 !important;
+}
+
+/* ── Code & pre ── */
+html.dark-mode code {
+  background-color: #1e1e1e !important;
+  color: #d4d4d4 !important;
+}
+html.dark-mode pre, html.dark-mode pre:not([class]) {
+  background-color: #1e1e1e !important;
+  color: #d4d4d4 !important;
+  border-color: #444 !important;
+}
+
+/* ── Tables ── */
+html.dark-mode table { background-color: #1e1e1e !important; color: #e0e0e0 !important; }
+html.dark-mode thead th { background-color: #2a2a2a !important; color: #f0f0f0 !important; }
+html.dark-mode tr.odd, html.dark-mode tbody tr:nth-child(odd) { background-color: #191919 !important; }
+html.dark-mode .table-striped > tbody > tr:nth-of-type(odd) { background-color: #1a1a1a !important; }
+html.dark-mode .table > thead > tr > th,
+html.dark-mode .table > tbody > tr > td { border-color: #333 !important; }
+
+/* ── Generic cards / panels ── */
+html.dark-mode .well,
+html.dark-mode .panel,
+html.dark-mode .panel-body { background-color: #1e1e1e !important; border-color: #444 !important; }
+html.dark-mode .guidebox,
+html.dark-mode .topicbox { background-color: #1e1e1e !important; border-color: #444 !important; }
+html.dark-mode .feature-card,
+html.dark-mode .pub-card,
+html.dark-mode .related-post-card,
+html.dark-mode .coming-soon-box { background-color: #1e1e1e !important; border-color: #444 !important; }
+html.dark-mode .feature-card h3 { color: #4fbfc4 !important; }
+html.dark-mode .feature-card p,
+html.dark-mode .pub-card p { color: #ccc !important; }
+html.dark-mode .related-post-card h3 a { color: #4fbfc4 !important; }
+html.dark-mode .related-post-card .post-date { color: #888 !important; }
+
+/* ── INDEX PAGE: publications + projects (inline bg/color styles) ── */
+html.dark-mode #publications,
+html.dark-mode #projects { background-color: #121212 !important; }
+
+/* Catch all inline white / light backgrounds */
+html.dark-mode [style*="background: #fff"],
+html.dark-mode [style*="background:#fff"],
+html.dark-mode [style*="background: white"],
+html.dark-mode [style*="background-color: white"],
+html.dark-mode [style*="background-color: #fff"],
+html.dark-mode [style*="background-color: #FFF"],
+html.dark-mode [style*="background-color: #ffffff"],
+html.dark-mode [style*="background-color: #FFFFFF"],
+html.dark-mode [style*="background: #f9f9f9"],
+html.dark-mode [style*="background-color: #f9f9f9"],
+html.dark-mode [style*="background-color: #F9F9ED"],
+html.dark-mode [style*="background: #f5f5f5"],
+html.dark-mode [style*="background-color: #f5f5f5"],
+html.dark-mode [style*="background: #f0f4f8"],
+html.dark-mode [style*="background-color: #f0f4f8"] {
+  background-color: #1e1e1e !important;
+  background: #1e1e1e !important;
+}
+
+/* Catch inline dark text colors */
+html.dark-mode [style*="color: #555"],
+html.dark-mode [style*="color: #333"],
+html.dark-mode [style*="color: #444"],
+html.dark-mode [style*="color: #666"],
+html.dark-mode [style*="color: #888"],
+html.dark-mode [style*="color: black"] {
+  color: #ccc !important;
+}
+
+/* Preserve accent colors (teal, gold, blues) — don't override them */
+html.dark-mode [style*="color: #238A8D"] { color: #4fbfc4 !important; }
+html.dark-mode [style*="color: #003366"] { color: #6fa3d0 !important; }
+html.dark-mode [style*="color: #1a7a4a"] { color: #5bbf8a !important; }
+html.dark-mode [style*="color: #1e90ff"] { color: #6ab8ff !important; }
+
+/* ── TEAM PAGE ── */
+html.dark-mode .page-header { color: #f0f0f0 !important; }
+html.dark-mode .group-header { color: #b0b0b0 !important; }
+html.dark-mode .team-name { color: #4fbfc4 !important; }
+html.dark-mode .team-role { color: #aaa !important; }
+html.dark-mode .team-card { background-color: transparent !important; }
+
+/* ── TALKS PAGE ── */
+html.dark-mode .year-talks li {
+  background: #1e1e1e !important;
+  border-left-color: #3a6b5a !important;
+  color: #e0e0e0 !important;
+}
+html.dark-mode .year-talks li:hover {
+  background: #252525 !important;
+  border-left-color: #4fbfc4 !important;
+}
+html.dark-mode .year-label { color: #4fbfc4 !important; }
+html.dark-mode .year-label::after {
+  background: #4fbfc4 !important;
+  border-color: #121212 !important;
+  box-shadow: 0 0 0 2px #4fbfc4 !important;
+}
+html.dark-mode .timeline::before {
+  background: linear-gradient(to bottom, #4fbfc4, #3a6b5a) !important;
+}
+html.dark-mode .video-container {
+  background: #1e1e1e !important;
+  border-left-color: #3a6b5a !important;
+}
+
+/* ── PROFILE PAGES ── */
+html.dark-mode .profile-name { color: #f0f0f0 !important; }
+html.dark-mode .profile-role { color: #b0b0b0 !important; }
+html.dark-mode .profile-org,
+html.dark-mode .profile-org a,
+html.dark-mode .profile-org-alumni a { color: #4fbfc4 !important; }
+html.dark-mode .bio-section p { color: #e0e0e0 !important; }
+html.dark-mode .education-section h2 { color: #f0f0f0 !important; }
+html.dark-mode .education-degree { color: #e0e0e0 !important; }
+html.dark-mode .education-institution { color: #999 !important; }
+html.dark-mode .education-icon { color: #4fbfc4 !important; }
+html.dark-mode .back-button { color: #e0e0e0 !important; border-color: #666 !important; }
+html.dark-mode .back-button:hover { background-color: #e0e0e0 !important; color: #121212 !important; }
+html.dark-mode .social-links-large a,
+html.dark-mode .social-links-large a svg { color: #4fbfc4 !important; fill: #4fbfc4 !important; }
+html.dark-mode .social-links-large a:hover,
+html.dark-mode .social-links-large a:hover svg { color: #fbb731 !important; fill: #fbb731 !important; }
+
+/* ── BLOOMBERG / CASE STUDY CARDS ── */
+html.dark-mode .cs-card { filter: brightness(0.75) !important; }
+html.dark-mode .cs-section-title { opacity: 0.85 !important; }
+
+/* ── EVENTS page (inline color overrides already caught above) ── */
+
+/* ── Toolbar (keep it styled correctly) ── */
+html.dark-mode #ocs-toolbar {
+  background: rgba(26,26,26,0.97) !important;
+  border-color: #444 !important;
+}
+html.dark-mode #ocs-toolbar .goog-te-gadget-simple .goog-te-menu-value { color: #4fbfc4 !important; }
+html.dark-mode #dark-mode-btn { color: #fbb731 !important; }
+html.dark-mode #dark-mode-btn:hover { color: #e0e0e0 !important; }
+</style>

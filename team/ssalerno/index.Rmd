@@ -1,7 +1,7 @@
 ---
 title: Stephen Salerno, PhD
 name: Stephen Salerno, PhD
-role: Research Assistant
+role: Postdoctoral Fellow
 organization: Fred Hutchinson Cancer Center
 organization_url: 'https://www.fredhutch.org'
 email: ssalerno@fredhutch.org
@@ -58,7 +58,7 @@ knitr::opts_chunk$set(echo = FALSE)
   line-height: 1.2;
 }
 .profile-role {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #888;
   font-weight: 300;
   margin: 0 0 10px 0;
@@ -147,7 +147,7 @@ knitr::opts_chunk$set(echo = FALSE)
 <div class="profile-left">
 <img src="avatar.png" alt="Stephen Salerno" class="profile-avatar">
 <h1 class="profile-name">Stephen Salerno</h1>
-<div class="profile-role">Research Assistant</div>
+<div class="profile-role">Postdoctoral Fellow</div>
 <div class="profile-org"><a href="https://www.fredhutch.org">Fred Hutchinson Cancer Center</a></div>
 <div class="social-links-large">
 <a href="mailto:ssalerno@fredhutch.org" title="Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>

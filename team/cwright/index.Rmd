@@ -7,8 +7,15 @@ organization_url: ''
 email: cwrigh60@jh.edu
 bio: Senior Staff Scientist at the Fred Hutchinson Cancer Center and affiliated faculty
   member at the Johns Hopkins Bloomberg School of Public Health.
-user_group: Principal Investigators
+user_group: Faculty
 avatar: avatar.jpg
+output:
+  html_document:
+    theme: cosmo
+    lib_dir: site_libs
+    self_contained: no
+    highlight: textmate
+    css: ../../styles.css
 education:
 - degree: Postdoctoral Fellow
   institution: Lieber Institute for Brain Development
@@ -62,9 +69,9 @@ knitr::opts_chunk$set(echo = FALSE)
   line-height: 1.2;
 }
 .profile-role {
-  font-size: 1.1rem;
+  font-size: 2rem;
   color: #888;
-  font-weight: 300;
+  font-weight: 600;
   margin: 0 0 10px 0;
 }
 .profile-org {
@@ -147,7 +154,7 @@ knitr::opts_chunk$set(echo = FALSE)
   color: #333;
   border: 2px solid #333;
   border-radius: 4px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
@@ -159,7 +166,7 @@ knitr::opts_chunk$set(echo = FALSE)
 </style>
 
 <div class="profile-container">
-<a href="../../team.html" class="back-button">← Back to Team</a>
+<button onclick="history.back()" class="back-button">← Back to Team</button>
 <div class="profile-layout">
 
 <div class="profile-left">

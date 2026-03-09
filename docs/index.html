@@ -11,9 +11,9 @@
 
 
 
-<title>index.knit</title>
+<title>Open Case Studies</title>
 
-<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -36,6 +36,234 @@
  <!--- go to https://favicon.io/favicon-converter/ to upload an image to make a new favicon.io. You will need to replace the current favicon.io image with the one in the downloaded directory from the website. The current image is in the resources/images/ directory --->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<!-- Apply saved dark mode before render to prevent flash -->
+<script>
+  if (localStorage.getItem('darkMode') === 'true') {
+    document.documentElement.classList.add('dark-mode');
+  }
+</script>
+
+<style>
+/* ── Floating toolbar ── */
+#ocs-toolbar {
+  position: fixed;
+  top: 12px;
+  right: 16px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 4px 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  backdrop-filter: blur(4px);
+}
+/* Keep translate widget compact */
+#ocs-toolbar .goog-te-gadget-simple {
+  border: none !important;
+  background: transparent !important;
+  font-size: 0.8rem !important;
+  padding: 0 !important;
+  white-space: nowrap;
+}
+#ocs-toolbar .goog-te-gadget-simple img { display: none !important; }
+#ocs-toolbar .goog-te-gadget-simple .goog-te-menu-value {
+  font-size: 0.8rem;
+  color: #238A8D;
+}
+#ocs-toolbar .goog-te-gadget-simple .goog-te-menu-value span { color: inherit !important; }
+/* Ensure translate dropdown isn't clipped */
+.goog-te-menu-frame { max-height: 300px !important; overflow-y: auto !important; }
+
+#dark-mode-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #238A8D;
+  padding: 2px 2px;
+  line-height: 1;
+}
+#dark-mode-btn:hover { color: #fbb731; }
+
+/* ══════════════════════════════════
+   DARK MODE
+   ══════════════════════════════════ */
+html.dark-mode body {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+/* All headings */
+html.dark-mode h1, html.dark-mode h2,
+html.dark-mode h3, html.dark-mode h4,
+html.dark-mode h5, html.dark-mode h6,
+html.dark-mode .h1, html.dark-mode .h2,
+html.dark-mode .h3, html.dark-mode .h4 {
+  color: #f0f0f0 !important;
+}
+
+/* Body text and paragraphs */
+html.dark-mode p, html.dark-mode li,
+html.dark-mode td, html.dark-mode th,
+html.dark-mode label, html.dark-mode span {
+  color: #e0e0e0;
+}
+
+/* Links */
+html.dark-mode a { color: #4fbfc4; }
+html.dark-mode a:hover { color: #fbb731; }
+
+/* Main container */
+html.dark-mode .main-container,
+html.dark-mode #main-content { background-color: #121212 !important; }
+
+/* Navbar */
+html.dark-mode .navbar {
+  background-color: #1a1a1a !important;
+  border-color: #333 !important;
+}
+html.dark-mode .navbar .navbar-brand,
+html.dark-mode .navbar-nav > li > a {
+  color: #4fbfc4 !important;
+}
+html.dark-mode .navbar-nav > li > a:hover { color: #fbb731 !important; }
+html.dark-mode .dropdown-menu {
+  background-color: #1e1e1e !important;
+  border-color: #444 !important;
+}
+html.dark-mode .dropdown-menu > li > a {
+  color: #e0e0e0 !important;
+}
+html.dark-mode .dropdown-menu > li > a:hover {
+  background-color: #2a2a2a !important;
+  color: #4fbfc4 !important;
+}
+
+/* Toolbar */
+html.dark-mode #ocs-toolbar {
+  background: rgba(26,26,26,0.97);
+  border-color: #444;
+}
+html.dark-mode #ocs-toolbar .goog-te-gadget-simple .goog-te-menu-value { color: #4fbfc4; }
+html.dark-mode #dark-mode-btn { color: #fbb731; }
+html.dark-mode #dark-mode-btn:hover { color: #e0e0e0; }
+
+/* Cards and panels */
+html.dark-mode .feature-card,
+html.dark-mode .pub-card,
+html.dark-mode .related-post-card,
+html.dark-mode .coming-soon-box {
+  background: #1e1e1e !important;
+  border-color: #444 !important;
+  color: #e0e0e0;
+}
+html.dark-mode .feature-card h3 { color: #4fbfc4 !important; }
+html.dark-mode .feature-card p,
+html.dark-mode .pub-card p { color: #ccc !important; }
+html.dark-mode .related-post-card h3 a { color: #4fbfc4 !important; }
+html.dark-mode .related-post-card .post-date { color: #888 !important; }
+
+/* Guidebox / topicbox */
+html.dark-mode .guidebox,
+html.dark-mode .topicbox {
+  background: #1e1e1e !important;
+  border-color: #444 !important;
+}
+
+/* Callout / well */
+html.dark-mode .well { background: #1e1e1e !important; border-color: #444 !important; }
+
+/* Tables */
+html.dark-mode table { background: #1e1e1e; color: #e0e0e0; }
+html.dark-mode thead th { background: #2a2a2a !important; color: #f0f0f0; }
+html.dark-mode tbody tr:nth-child(odd) { background: #191919; }
+html.dark-mode tbody tr:hover { background: #252525; }
+
+/* Code */
+html.dark-mode pre, html.dark-mode code {
+  background: #1e1e1e !important;
+  color: #d4d4d4 !important;
+  border-color: #444 !important;
+}
+
+/* Dividers */
+html.dark-mode hr { border-color: #333; }
+
+/* Case study buttons */
+html.dark-mode .cs-card { filter: brightness(0.8) !important; }
+html.dark-mode .cs-section-title { opacity: 0.9; }
+
+/* Profile pages */
+html.dark-mode .profile-container { background: transparent; }
+html.dark-mode .profile-name { color: #f0f0f0 !important; }
+html.dark-mode .profile-role { color: #b0b0b0 !important; }
+html.dark-mode .profile-org,
+html.dark-mode .profile-org a { color: #4fbfc4 !important; }
+html.dark-mode .bio-section p { color: #e0e0e0 !important; }
+html.dark-mode .education-section h2 { color: #f0f0f0 !important; }
+html.dark-mode .education-degree { color: #e0e0e0 !important; }
+html.dark-mode .education-institution { color: #999 !important; }
+html.dark-mode .education-icon { color: #4fbfc4 !important; }
+html.dark-mode .back-button {
+  color: #e0e0e0 !important;
+  border-color: #666 !important;
+}
+html.dark-mode .back-button:hover {
+  background-color: #e0e0e0 !important;
+  color: #121212 !important;
+}
+
+/* Team page member cards */
+html.dark-mode .team-card,
+html.dark-mode .member-card { background: #1e1e1e !important; color: #e0e0e0 !important; }
+</style>
+
+<!-- Google Translate -->
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'ar,zh-CN,zh-TW,fr,de,hi,id,it,ja,ko,pt,ru,es,sw,vi',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toolbar = document.createElement('div');
+    toolbar.id = 'ocs-toolbar';
+
+    // Google Translate slot
+    var translateSlot = document.createElement('div');
+    translateSlot.id = 'google_translate_element';
+    toolbar.appendChild(translateSlot);
+
+    // Dark mode button
+    var isDark = document.documentElement.classList.contains('dark-mode');
+    var btn = document.createElement('button');
+    btn.id = 'dark-mode-btn';
+    btn.title = 'Toggle dark mode';
+    btn.innerHTML = '<i class="fa-solid ' + (isDark ? 'fa-sun' : 'fa-moon') + '"></i>';
+    btn.addEventListener('click', function () {
+      var dark = document.documentElement.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', dark);
+      btn.innerHTML = '<i class="fa-solid ' + (dark ? 'fa-sun' : 'fa-moon') + '"></i>';
+    });
+    toolbar.appendChild(btn);
+
+    document.body.appendChild(toolbar);
+  });
+</script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -295,6 +523,7 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Open Case Studies</h1>
 
 </div>
 
@@ -328,7 +557,7 @@ html {
 
 .section h2 {
   color: #238A8D;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
@@ -397,13 +626,17 @@ from data in real-world challenges.</p>
     Browse case studies
   </a>
 </p>
-<img class="img-center" src="https://opencasestudies.github.io/img/icon.png" alt="Open Case Studies icon">
-<p>Our case studies can be used:</p>
+<p><img src="resources/logo.png" alt="Open Case Studies Logo" style="max-width: 100%; height: 300px; display: block; margin-left: auto; margin-right: auto;">
+Our case studies can be used:</p>
 <ul>
 <li>by educators to help them teach</li>
 <li>by students to help them with their classes</li>
 <li>by independent learners to help them learn</li>
 </ul>
+<p>Find out more about how others are using case studies and what they
+think of them in this <a
+href="http://jhir.library.jhu.edu/handle/1774.2/66820">study</a>.</p>
+<!-- <a href="setup.html" class="btn-primary">Read More →</a> -->
 <p>Find out more about how others are using case studies and what they
 think of them in this <a
 href="http://jhir.library.jhu.edu/handle/1774.2/66820">study</a>.</p>

@@ -1,7 +1,7 @@
 ---
 title: Oshane Thomas, PhD
-name: Oshane Thoma, PhD
-role: Research Assistant
+name: Oshane Thomas, PhD
+role: Postdoctoral Fellow
 organization: Fred Hutchinson Cancer Center
 organization_url: 'https://www.fredhutch.org'
 email:
@@ -44,7 +44,7 @@ knitr::opts_chunk$set(echo = FALSE)
   line-height: 1.2;
 }
 .profile-role {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #888;
   font-weight: 300;
   margin: 0 0 10px 0;

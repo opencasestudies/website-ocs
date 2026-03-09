@@ -126,7 +126,7 @@ Find out more about how others are using case studies and what they think of the
 </div>
 
 
-<div style="background-color: #BFD7B5; color: black; padding: 15px 20px; border-radius: 6px; margin: 10px 20px; border: 1.5px solid #8ab58a; text-align: center;">
+<div style="background-color: #fbb731; color: black; padding: 15px 20px; border-radius: 6px; margin: 10px 20px; border: 1.5px solid #8ab58a; text-align: center;">
 <strong>Learn more about the OCS project and how to use our case studies using our guide:</strong><br>
 <a href="https://www.opencasestudies.org/OCS_Guide" style="color: black;" target="_blank">Website version</a> &nbsp;|&nbsp;
 <a href="https://leanpub.com/opencasestudies_guide" style="color: black;" target="_blank">PDF version and more</a>

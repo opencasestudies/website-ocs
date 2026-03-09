@@ -9,6 +9,22 @@ body {
 a { text-decoration: underline; }
 a:hover { text-decoration: none; }
 
+/* Navbar: white background, black text */
+.navbar {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+}
+
+.navbar .navbar-brand,
+.navbar-nav > li > a {
+  color: #238A8D !important;
+}
+
+.navbar .navbar-brand:hover,
+.navbar-nav > li > a:hover {
+  color: #fbb731 !important;
+}
+
 /* Remove underline from navbar links */
 .navbar a,
 .navbar-nav a,

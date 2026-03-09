@@ -18,6 +18,7 @@ a:hover { text-decoration: none; }
 .navbar .navbar-brand,
 .navbar-nav > li > a {
   color: #238A8D !important;
+  font-weight: 700 !important;
 }
 
 .navbar .navbar-brand:hover,
@@ -34,6 +35,10 @@ a:hover { text-decoration: none; }
 .navbar a:hover,
 .navbar-nav a:hover {
   text-decoration: none !important;
+}
+
+#header {
+    display: none;
 }
 
 /* Hero header (replacement for Hugo background section) */
@@ -59,6 +64,7 @@ a:hover { text-decoration: none; }
 .hero-subtitle {
   margin: 6px 0 0 0;
   opacity: 0.95;
+  font-size: 1rem;
 }
 
 /* Button (replacement for {{< mybutton >}} ) */

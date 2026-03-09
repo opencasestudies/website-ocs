@@ -4,6 +4,41 @@ description: "Open Case Studies funded by the Bloomberg American Health Initiati
 ---
 
 ```{css, echo=FALSE}
+.cs-section {
+  margin-bottom: 28px;
+}
+.cs-section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  
+  margin: 0 0 12px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid currentColor;
+}
+.cs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.cs-card {
+  border: none;
+  border-radius: 6px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  transition: filter 0.2s, transform 0.2s;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+.cs-card:hover {
+  filter: brightness(0.88);
+  transform: translateY(-2px);
+  color: #ffffff;
+  text-decoration: none;
+}
 .bloomberg-btn {
   display: inline-block;
   padding: 14px 32px;
@@ -71,23 +106,75 @@ description: "Open Case Studies funded by the Bloomberg American Health Initiati
   font-size: 1.4rem;
   margin: 0 0 10px 0;
 }
-section {
-  margin-bottom: 48px;
-}
 ```
 ---
-
-<section>
 
 <img src="resources/bloomberg_ocs_logo.png" alt="Bloomberg American Health Initiative logo" style="max-width: 320px; margin-bottom: 24px; display: block;">
 
 ## About the Project
 
-As part of the larger Open Case Studies project (OCS) at opencasestudies.org, these case studies were developed for and funded by the [Bloomberg American Health Initiative](https://americanhealth.jhu.edu/bloomberg-american-health-open-case-studies-project). The OCS project is made up of a team of researchers at the Johns Hopkins Bloomberg School of Public Health (JHSPH).
+As part of the larger Open Case Studies project (OCS), these case studies were developed for and funded by the [Bloomberg American Health Initiative](https://americanhealth.jhu.edu/bloomberg-american-health-open-case-studies-project). The OCS project is made up of a team of researchers at the Johns Hopkins Bloomberg School of Public Health (JHSPH).
 
-</section>
+## Case Studies
 
-```{=html}
-<p style="margin: 24px 0;"><a href="search.html" class="bloomberg-btn" style="background:#003366; color:white;font-size:14px">Browse Case Studies →</a></p>
+```{r case-study-cards, echo=FALSE, message=FALSE, results='asis'}
+library(readr)
+library(dplyr)
+
+df <- read_csv("OCS_info_co2int_only.csv", show_col_types = FALSE)
+
+bp <- df |>
+  filter(grepl("ocs-bp-", repo_name)) |>
+  select(case_study_name, Title, case_study_url)
+
+sections <- list(
+  list(
+    title = "Obesity and the Food System",
+    color = "#E07B39",
+    repos  = c("ocs-bp-rural-and-urban-obesity", "ocs-bp-diet")
+  ),
+  list(
+    title = "Environmental Challenges",
+    color = "#3A8C5C",
+    repos  = c("ocs-bp-co2-emissions", "ocs-bp-air-pollution")
+  ),
+  list(
+    title = "Addiction and Overdose",
+    color = "#8E44AD",
+    repos  = c("ocs-bp-opioid-rural-urban", "ocs-bp-vaping-case-study")
+  ),
+  list(
+    title = "Violence",
+    color = "#C0392B",
+    repos  = c("ocs-bp-RTC-wrangling", "ocs-bp-RTC-analysis",
+               "ocs-bp-school-shootings-dashboard")
+  ),
+  list(
+    title = "Adolescent Health",
+    color = "#2471A3",
+    repos  = c("ocs-bp-youth-disconnection", "ocs-bp-youth-mental-health")
+  )
+)
+
+for (s in sections) {
+  studies <- bp |> filter(case_study_name %in% s$repos)
+
+  cards <- paste0(
+    '<div><a class="cs-card" style="background:', s$color, ';" ',
+    'href="', studies$case_study_url, '" target="_blank">',
+    studies$Title,
+    '</a></div>',
+    collapse = "\n"
+  )
+
+  cat(
+    '<div class="cs-section">',
+    '<div class="cs-section-title" style="color:', s$color, ';">', s$title, '</div>',
+    '<div class="cs-grid">', cards, '</div>',
+    '</div>\n'
+  )
+}
 ```
+
+<a href="search.html" class="bloomberg-btn" style="background:#003366; color:white; font-size:14px; display:block; text-align:center; margin-top:20px;">Browse All Case Studies →</a>
 

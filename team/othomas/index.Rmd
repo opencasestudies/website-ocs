@@ -4,12 +4,23 @@ name: Oshane Thomas, PhD
 role: Postdoctoral Fellow
 organization: Fred Hutchinson Cancer Center
 organization_url: 'https://www.fredhutch.org'
-email:
-bio:
+email: othomas@fredhutch.org
+bio: >
+  Postdoctoral Fellow in the Data Science Laboratory at Fred Hutch Cancer Center
+  working on the Open Case Studies educational grant program.
 user_group: Research Assistants
 avatar: avatar.png
 education:
+  - course: PhD in Biological Anthropology
+    institution: University of Illinois at Urbana-Champaign, Champaign, Illinois
+  - course: BS in Anthropology, Biology, and Chemistry
+    institution: Lehman College, City University of New York (CUNY), Bronx, New York
 social:
+  email: othomas@fredhutch.org
+  website: https://oothomas.github.io/
+  linkedin: https://www.linkedin.com/in/oshane-o-thomas/
+  google_scholar: https://scholar.google.com/citations?user=BTOnQmwAAAAJ&hl=en&oi=ao
+  github: https://github.com/oothomas
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -46,7 +57,7 @@ knitr::opts_chunk$set(echo = FALSE)
 .profile-role {
   font-size: 2rem;
   color: #888;
-  font-weight: 300;
+  font-weight: 600;
   margin: 0 0 10px 0;
 }
 .profile-org {
@@ -131,19 +142,43 @@ knitr::opts_chunk$set(echo = FALSE)
 <div class="profile-layout">
 
 <div class="profile-left">
-<img src="avatar.png" alt="Oshane Thomas" class="profile-avatar">
-<h1 class="profile-name">Oshane Thomas</h1>
+<img src="avatar.png" alt="Oshane Thomas, PhD" class="profile-avatar">
+<h1 class="profile-name">Oshane Thomas, PhD</h1>
 <div class="profile-role">Postdoctoral Fellow</div>
 <div class="profile-org"><a href="https://www.fredhutch.org">Fred Hutchinson Cancer Center</a></div>
 <div class="social-links-large">
+<a href="mailto:othomas@fredhutch.org" title="Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+<a href="https://oothomas.github.io/" title="Website"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></a>
+<a href="https://www.linkedin.com/in/oshane-o-thomas/" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+<a href="https://scholar.google.com/citations?user=BTOnQmwAAAAJ&hl=en&oi=ao" title="Google Scholar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg></a>
+<a href="https://github.com/oothomas" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg></a>
 </div>
 </div>
 
 <div class="profile-right">
 <div class="bio-section">
+<p>Oshane is a Postdoctoral Fellow in the <a href="https://hutchdatascience.org/">Data Science Laboratory</a> at <a href="https://www.fredhutch.org">Fred Hutch Cancer Center</a> working on the <a href="https://www.opencasestudies.org">Open Case Studies</a> educational grant program. I am currently developing new case studies that apply latent variable analysis to single-cell RNA-seq data to investigate biologically meaningful patterns and questions, making advanced computational methods more accessible for education and research.</p>
 </div>
 
 <div class="education-section">
+<h2>Education</h2>
+
+<div class="education-item">
+<div class="education-icon">&#127891;</div>
+<div class="education-content">
+<div class="education-degree">PhD in Biological Anthropology</div>
+<div class="education-institution">University of Illinois at Urbana-Champaign, Champaign, Illinois</div>
+</div>
+</div>
+
+<div class="education-item">
+<div class="education-icon">&#127891;</div>
+<div class="education-content">
+<div class="education-degree">BS in Anthropology, Biology, and Chemistry</div>
+<div class="education-institution">Lehman College, City University of New York (CUNY), Bronx, New York</div>
+</div>
+</div>
+
 </div>
 </div>
 

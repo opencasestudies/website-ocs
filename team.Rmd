@@ -12,7 +12,7 @@ body {
   padding: 0 !important;
   text-align: center !important;
 }
-/* Override rmarkdown's default content width */
+/* Override rmarkdown's default content width */ 
 .main-container {
   max-width: 1600px !important;
   margin: 0 auto !important;

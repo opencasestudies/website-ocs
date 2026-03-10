@@ -22,7 +22,10 @@ a:hover { text-decoration: none; }
 }
 
 .navbar .navbar-brand:hover,
-.navbar-nav > li > a:hover {
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a,
+.navbar-nav > li.active > a:hover,
+.navbar-nav > li.active > a:focus {
   color: #fbb731 !important;
 }
 

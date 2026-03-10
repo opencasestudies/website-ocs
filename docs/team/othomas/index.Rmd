@@ -44,7 +44,7 @@ knitr::opts_chunk$set(echo = FALSE)
   line-height: 1.2;
 }
 .profile-role {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: #888;
   font-weight: 300;
   margin: 0 0 10px 0;
@@ -133,6 +133,7 @@ knitr::opts_chunk$set(echo = FALSE)
 <div class="profile-left">
 <img src="avatar.png" alt="Oshane Thomas" class="profile-avatar">
 <h1 class="profile-name">Oshane Thomas</h1>
+<div class="profile-role">Postdoctoral Fellow</div>
 <div class="profile-org"><a href="https://www.fredhutch.org">Fred Hutchinson Cancer Center</a></div>
 <div class="social-links-large">
 </div>

@@ -13,7 +13,7 @@
 
 <title>Survey</title>
 
-<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -37,15 +37,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-<!-- Apply saved dark mode before render to prevent flash -->
-<script>
-  if (localStorage.getItem('darkMode') === 'true') {
-    document.documentElement.classList.add('dark-mode');
-  }
-</script>
-
 <style>
-/* Floating toolbar: translate + dark mode */
+/* ── Floating toolbar ── */
 #ocs-toolbar {
   position: fixed;
   top: 12px;
@@ -53,55 +46,41 @@
   z-index: 9999;
   display: flex;
   align-items: center;
-  gap: 6px;
-  background: rgba(255,255,255,0.92);
+  gap: 8px;
+  background: rgba(255,255,255,0.95);
   border: 1px solid #ddd;
   border-radius: 20px;
-  padding: 4px 10px;
+  padding: 4px 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
   backdrop-filter: blur(4px);
 }
 #ocs-toolbar .goog-te-gadget-simple {
   border: none !important;
   background: transparent !important;
-  font-size: 0.82rem;
-  padding: 0;
+  font-size: 1rem !important;
+  padding: 0 !important;
+  white-space: nowrap;
 }
-#ocs-toolbar .goog-te-gadget-simple .goog-te-menu-value span:first-child { display: none; }
-#dark-mode-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
+#ocs-toolbar .goog-te-gadget-simple img { display: none !important; }
+#ocs-toolbar .goog-te-gadget-simple .goog-te-menu-value {
   font-size: 1rem;
   color: #238A8D;
-  padding: 2px 4px;
-  line-height: 1;
+  font-weight: 600;
 }
-#dark-mode-btn:hover { color: #fbb731; }
-
-/* Dark mode overrides */
-html.dark-mode body { background: #1a1a1a; color: #e0e0e0; }
-html.dark-mode .navbar { background-color: #111 !important; border-color: #333 !important; }
-html.dark-mode .navbar .navbar-brand,
-html.dark-mode .navbar-nav > li > a { color: #7ecfc1 !important; }
-html.dark-mode .main-container { background: #1a1a1a; }
-html.dark-mode #ocs-toolbar { background: rgba(30,30,30,0.95); border-color: #444; }
-html.dark-mode #dark-mode-btn { color: #fbb731; }
-html.dark-mode .cs-card { filter: brightness(0.9); }
-html.dark-mode .feature-card,
-html.dark-mode .pub-card { background: #2a2a2a; }
-html.dark-mode .profile-name,
-html.dark-mode .profile-role,
-html.dark-mode .bio-section p,
-html.dark-mode .education-degree { color: #e0e0e0; }
-html.dark-mode .education-institution { color: #aaa; }
+#ocs-toolbar .goog-te-gadget-simple .goog-te-menu-value span { color: inherit !important; }
+.goog-te-menu-frame { max-height: 300px !important; overflow-y: auto !important; }
 </style>
 
 <!-- Google Translate -->
 <script>
   function googleTranslateElementInit() {
     new google.translate.TranslateElement(
-      { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'ar,zh-CN,zh-TW,fr,de,hi,id,it,ja,ko,pt,ru,es,sw,vi',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      },
       'google_translate_element'
     );
   }
@@ -113,23 +92,9 @@ html.dark-mode .education-institution { color: #aaa; }
     var toolbar = document.createElement('div');
     toolbar.id = 'ocs-toolbar';
 
-    // Google Translate slot
     var translateSlot = document.createElement('div');
     translateSlot.id = 'google_translate_element';
     toolbar.appendChild(translateSlot);
-
-    // Dark mode button
-    var isDark = document.documentElement.classList.contains('dark-mode');
-    var btn = document.createElement('button');
-    btn.id = 'dark-mode-btn';
-    btn.title = 'Toggle dark mode';
-    btn.innerHTML = '<i class="fa-solid ' + (isDark ? 'fa-sun' : 'fa-moon') + '"></i>';
-    btn.addEventListener('click', function () {
-      var dark = document.documentElement.classList.toggle('dark-mode');
-      localStorage.setItem('darkMode', dark);
-      btn.innerHTML = '<i class="fa-solid ' + (dark ? 'fa-sun' : 'fa-moon') + '"></i>';
-    });
-    toolbar.appendChild(btn);
 
     document.body.appendChild(toolbar);
   });

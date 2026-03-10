@@ -55,7 +55,7 @@ knitr::opts_chunk$set(echo = FALSE)
   line-height: 1.2;
 }
 .profile-role {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: #888;
   font-weight: 300;
   margin: 0 0 10px 0;

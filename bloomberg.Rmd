@@ -155,6 +155,56 @@ description: "Open Case Studies funded by the Bloomberg American Health Initiati
 ## About the Project
 
 As part of the larger Open Case Studies project (OCS), these case studies were developed for and funded by the [Bloomberg American Health Initiative](https://americanhealth.jhu.edu/bloomberg-american-health-open-case-studies-project). The OCS project is made up of a team of researchers at the Johns Hopkins Bloomberg School of Public Health (JHSPH).
+<br>
+
+## What You'll Work With
+
+<div class="skills-grid">
+
+<div class="skills-col">
+<h3>Question Type</h3>
+<ul>
+<li>Changes over time?</li>
+<li>Differences in groups? regions?</li>
+<li>Differences in groups over time?</li>
+<li>Differences in paired groups?</li>
+<li>Predict outcomes for new data?</li>
+<li>Does this influence my data?</li>
+<li>Relationships between variables?</li>
+<li>Display data for others to find, interpret and easily use</li>
+</ul>
+</div>
+
+<div class="skills-col">
+<h3>Data Type</h3>
+<ul>
+<li>PDF</li>
+<li>CSV</li>
+<li>Website</li>
+<li>Excel</li>
+<li>Text in images</li>
+<li>API</li>
+<li>Google sheets</li>
+<li>Survey data / Code books</li>
+<li>Multiple files</li>
+</ul>
+</div>
+
+<div class="skills-col">
+<h3>Wrangling Methods</h3>
+<ul>
+<li>Extracting data from a PDF</li>
+<li>Geocoding data</li>
+<li>Joining data</li>
+<li>Filtering data</li>
+<li>Reshaping data</li>
+<li>Transforming data</li>
+<li>Working with text data</li>
+<li>Repetitive processes</li>
+</ul>
+</div>
+<br>
+</div>
 
 ## What You'll Learn
 
@@ -200,7 +250,7 @@ As part of the larger Open Case Studies project (OCS), these case studies were d
 <li>Machine learning</li>
 </ul>
 </div>
-
+<br>
 </div>
 
 ## Case Studies

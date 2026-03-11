@@ -88,13 +88,11 @@ section {
 
 ## About BioOCS
 
-BioOCS is an extension of the [Open Case Studies](https://opencasestudies.github.org/) project focused on the biomedical sciences. BioOCS is designed for learners in biology, biomedical research, and quantitative biology.
+BioOCS is an extension of the [Open Case Studies](https://opencasestudies.org/) project focused on the biomedical sciences. BioOCS is designed for learners in biology, biomedical research, and quantitative biology.
 
 </section>
 
 <section id="case-studies">
-
-<!-- ## Case Studies -->
 
 <div class="coming-soon-box">
 <h3>Coming Soon</h3>

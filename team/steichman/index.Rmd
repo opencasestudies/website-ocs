@@ -57,7 +57,7 @@ knitr::opts_chunk$set(echo = FALSE)
 .profile-role {
   font-size: 2rem;
   color: #888;
-  font-weight: 300;
+  font-weight: 600;
   margin: 0 0 10px 0;
 }
 .profile-org {

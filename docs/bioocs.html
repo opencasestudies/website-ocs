@@ -13,7 +13,7 @@
 
 <title>BioOCS</title>
 
-<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -32,6 +32,14 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/core-js-2.5.3/shim.min.js"></script>
+<script src="site_libs/react-18.2.0/react.min.js"></script>
+<script src="site_libs/react-18.2.0/react-dom.min.js"></script>
+<script src="site_libs/reactwidget-2.0.0/react-tools.js"></script>
+<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet" />
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/reactable-0.4.5/reactable.css" rel="stylesheet" />
+<script src="site_libs/reactable-binding-0.4.5/reactable.js"></script>
 <link rel="shortcut icon" href="resources/images/favicon.ico" />
  <!--- go to https://favicon.io/favicon-converter/ to upload an image to make a new favicon.io. You will need to replace the current favicon.io image with the one in the downloaded directory from the website. The current image is in the resources/images/ directory --->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -415,33 +423,19 @@ $(document).ready(function () {
   background: #f0f7f4;
   border: 1.5px dashed #1a7a4a;
   border-radius: 8px;
-  padding: 28px 32px;
+  padding: 4px 32px;
   text-align: center;
   color: #555;
-  margin: 24px 0;
+  margin: 1px 0;
 }
 .coming-soon-box h3 {
   color: #1a7a4a;
   font-size: 1.4rem;
-  margin: 0 0 10px 0;
-}
-.events-box {
-  background: #f9f9f9;
-  border-left: 4px solid #238A8D;
-  border-radius: 0 8px 8px 0;
-  padding: 24px 28px;
-  margin-top: 16px;
-}
-.events-box h3 {
-  color: #238A8D;
-  margin: 0 0 10px 0;
-}
-section {
-  margin-bottom: 48px;
+  margin: 10px 0 10px 0 !important;
+  padding-top: 0 !important;
 }
 </style>
 <hr />
-<section>
 <p><img src="resources/bio_ocs_logo.png" alt="BioOCS logo" style="max-width: 320px; margin-bottom: 24px; display: block;"></p>
 <div id="about-bioocs" class="section level2">
 <h2>About BioOCS</h2>
@@ -449,9 +443,11 @@ section {
 href="https://opencasestudies.github.org/">Open Case Studies</a> project
 focused on the biomedical sciences. BioOCS is designed for learners in
 biology, biomedical research, and quantitative biology.</p>
-</section>
-<section id="case-studies">
-<!-- ## Case Studies -->
+</div>
+<div id="case-studies" class="section level2">
+<h2>Incoming Case Studies</h2>
+<div class="reactable html-widget html-fill-item" id="htmlwidget-79d64c80f6f79bee2cd0" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-79d64c80f6f79bee2cd0">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Title":["Analyzing Single-Nucleus RNA Sequencing Data from Control and Sleep-Deprived Mice","Predicting age based on epigenetic markers (epigenetic clock) using Neural Networks in R with scorcher","Analyzing Spatially-Informed Gene Expression to Compare Schizophrenia and Neurotypical Cases Using an Image-Based Approach","Revealing Hidden Patterns of Interferon Responses in Individual Cells Using CoGAPS","Discovering Temporal Gene Expression Patterns with CoGAPS in Single-Cell Influenza Infection Data","Using containers for reproducible analyses","Using GitHub for version controlled reproducible analyses: Exploring Maternal and Infant Microbiome Metadata"],"Bioinformatics Topics":["Single-nucleus RNA sequencing analysis, Normalization","Deep Learning, AI, Neural Networks","Image-based Spatial Transcriptomics, Gene Expression Analysis","Latent variable analysis, Dimension reduction techniques","Temporal Analysis, Latent variable analysis, Dimension reduction techniques","Docker, Containers","GitHub, Metadata"],"Biological Topics":["Sleep Deprivation","Epigenetic Clocks, Aging","Schizophrenia","Interferon responses","Influenza infection","Metabolomics","Maternal and infant microbiome"],"Data Types":["snRNA-seq (single-nucleus RNA-seq)","Methylation Data","Xenium spatial transcriptomics data","scRNA-seq (single-cell RNA-seq)","scRNA-seq (single-cell RNA-seq)","Study Information","Metadata"]},"columns":[{"id":"Title","name":"Title","type":"character","minWidth":220,"style":{"fontWeight":"500"}},{"id":"Bioinformatics Topics","name":"Bioinformatics Topics","type":"character","minWidth":180},{"id":"Biological Topics","name":"Biological Topics","type":"character","minWidth":140},{"id":"Data Types","name":"Data Types","type":"character","minWidth":160}],"searchable":true,"pagination":false,"highlight":true,"bordered":true,"striped":true,"theme":{"borderColor":"#dde","stripedColor":"#f0f7f4","highlightColor":"#d6ede5","style":{"fontSize":"1.4rem"},"headerStyle":{"background":"#1a7a4a","color":"#fff","fontWeight":"500"}},"dataKey":"c390973ef74a498de3ad52578d1bdeaf"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 <div class="coming-soon-box">
 <h3>
 Coming Soon
@@ -461,7 +457,6 @@ BioOCS case studies are currently in development. Check back for updates
 as new case studies are released.
 </p>
 </div>
-</section>
 </div>
 
 

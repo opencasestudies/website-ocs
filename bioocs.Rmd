@@ -2,7 +2,8 @@
 title: "BioOCS"
 description: "BioOCS — Open Case Studies for the biosciences, bringing real-world quantitative biology education to learners at every level."
 ---
-```{r}
+
+```{r, warning=FALSE, echo=FALSE}
 if (!requireNamespace("reactable", quietly = TRUE)) {
   install.packages("reactable", dependencies = TRUE, repos = "http://cran.rstudio.com/")
 }
@@ -73,7 +74,7 @@ if (!requireNamespace("reactable", quietly = TRUE)) {
   padding-top: 0 !important;
 }
 ```
----
+
 
 <img src="resources/bio_ocs_logo.png" alt="BioOCS logo" style="max-width: 320px; margin-bottom: 24px; display: block;">
 

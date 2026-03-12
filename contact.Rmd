@@ -6,6 +6,6 @@ output:
 
 
 
-If you have questions please contact:
+If you have questions please contact: 
 
 * Carrie Wright (cwright2@fredhutch.org)

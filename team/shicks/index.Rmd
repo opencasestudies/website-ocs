@@ -1,7 +1,7 @@
 ---
 title: Stephanie Hicks, PhD
 name: Stephanie Hicks, PhD
-role: Assistant Professor (Principal Investigator)
+role: Assistant Professor
 organization: Stephanie Hicks, PhD
 organization_url: ''
 email: shicks19@jhu.edu

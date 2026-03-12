@@ -2,6 +2,12 @@
 title: "BioOCS"
 description: "BioOCS — Open Case Studies for the biosciences, bringing real-world quantitative biology education to learners at every level."
 ---
+```{r}
+if (!requireNamespace("reactable", quietly = TRUE)) {
+  install.packages("reactable", dependencies = TRUE, repos = "http://cran.rstudio.com/")
+}
+```
+
 
 ```{css, echo=FALSE}
 .bioocs-btn {
@@ -73,7 +79,7 @@ description: "BioOCS — Open Case Studies for the biosciences, bringing real-wo
 
 ## About BioOCS
 
-BioOCS is an extension of the [Open Case Studies](https://opencasestudies.github.org/) project focused on the biomedical sciences. BioOCS is designed for learners in biology, biomedical research, and quantitative biology.
+BioOCS is an extension of the [Open Case Studies](https://opencasestudies.org/) project focused on the biomedical sciences. BioOCS is designed for learners in biology, biomedical research, and quantitative biology.
 
 ## Incoming Case Studies {#case-studies}
 

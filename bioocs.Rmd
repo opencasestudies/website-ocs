@@ -2,6 +2,12 @@
 title: "BioOCS"
 description: "BioOCS — Open Case Studies for the biosciences, bringing real-world quantitative biology education to learners at every level."
 ---
+```{r}
+if (!requireNamespace("reactable", quietly = TRUE)) {
+  install.packages("reactable", lib = temp_lib, dependencies = TRUE, repos = "http://cran.rstudio.com/")
+}
+```
+
 
 ```{css, echo=FALSE}
 .bioocs-btn {
@@ -78,7 +84,7 @@ BioOCS is an extension of the [Open Case Studies](https://opencasestudies.org/) 
 ## Incoming Case Studies {#case-studies}
 
 ```{r incoming-table, echo=FALSE, message=FALSE, warning=FALSE}
-library(reactable)
+library(reactable, lib.loc = temp_lib)
 library(dplyr)
 
 incoming <- tibble::tribble(

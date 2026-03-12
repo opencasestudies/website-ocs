@@ -7,3 +7,5 @@ survey.html
 %s
 blog.html
 ../blog.html
+../../team.html
+mailto:cwrigh60@jh.edu
